@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -34,4 +35,44 @@ html {
   html {
     font-size: 75%;
   }
+}
+
+.сontactInformation {
+  max-width: 144rem;
+  background-color: #F9FEFF;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.сontactInformation-logo img {
+  width: 15rem;
+  height: auto;
+}
+.сontactInformation_img {
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .сontactInformation_img {
+    margin-bottom: 1rem;
+  }
+}
+.сontactInformation_img img {
+  width: 5rem;
+  height: auto;
+}
+.сontactInformation_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgb(51, 51, 51);
+}
+.сontactInformation_information {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgb(33, 33, 33);
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 @import "fonts/fonts.sass"
 @import "variables/variables.sass"
 @import "variables/mixin.sass"
+@import "variables/card.sass"
 
 *, ::after, ::before
     margin: 0
@@ -23,3 +24,28 @@ html
         font-size: 30%
     @include respond(big-screen)
         font-size: 75%
+
+.сontactInformation
+    max-width: 144rem
+    background-color: $backgroundColor
+    margin: 0 auto
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-around
+    align-items: center
+    &-logo
+        img
+            width: 15rem
+            height: auto
+
+    &_img
+        text-align: center
+        @include respond(tab-port)
+            margin-bottom: 1rem
+        img
+            width: 5rem
+            height: auto
+    &_text
+        @include font1
+    &_information
+        @include font2
