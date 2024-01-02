@@ -13,6 +13,9 @@ li:last-child
 
 html
     font-size: 62.5%
+    a
+        text-decoration: none
+        color: inherit
 
 html
     font-size: 62.5%
@@ -26,13 +29,14 @@ html
         font-size: 75%
 
 .сontactInformation
-    max-width: 144rem
+    padding: 2rem 0 1rem 0
+    // max-width: 144rem
     background-color: $backgroundColor
-    margin: 0 auto
     display: flex
     flex-flow: row wrap
     justify-content: space-around
-    align-items: center
+    // align-items: center
+    text-align: center
     &-logo
         img
             width: 15rem
@@ -49,3 +53,46 @@ html
         @include font1
     &_information
         @include font2
+        a
+            text-decoration: none
+            color: inherit
+    &-telegramLink
+        padding-top: 0.6rem
+
+.navigationMenu
+    // @include respond(phone)
+    //     display: none
+    background-color: $backgroundColorSecond
+    ul
+        list-style-type: none
+        text-align: center
+        padding-top: 2rem
+        margin-bottom: 0rem
+        li
+            display: inline-block
+            @include font6
+            margin-right: 5rem
+            color: white
+            margin-bottom: 2rem
+    &__element
+        &_fourth
+            @include respond(phone)
+                padding-right: 12rem
+
+.carsFromEurope
+    height: 75vh
+    // background-image: url('../img/peugeot-BG.jpg')
+    background-image: url('../img/peugeot-BGsmall.jpg')
+    background-position: center center
+    /* Фон не повторяется */
+    background-repeat: no-repeat
+    /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+    background-attachment: fixed
+    /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
+    background-size: cover
+    /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/
+    text-align: center
+    vertical-align: middle
+    &__services
+        @include font3
+        color: white

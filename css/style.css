@@ -12,6 +12,10 @@ li:last-child {
 html {
   font-size: 62.5%;
 }
+html a {
+  text-decoration: none;
+  color: inherit;
+}
 
 html {
   font-size: 62.5%;
@@ -38,13 +42,12 @@ html {
 }
 
 .сontactInformation {
-  max-width: 144rem;
+  padding: 2rem 0 1rem 0;
   background-color: #F9FEFF;
-  margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
+  text-align: center;
 }
 .сontactInformation-logo img {
   width: 15rem;
@@ -75,4 +78,61 @@ html {
   font-size: 1.3rem;
   line-height: 2rem;
   color: rgb(33, 33, 33);
+}
+.сontactInformation_information a {
+  text-decoration: none;
+  color: inherit;
+}
+.сontactInformation-telegramLink {
+  padding-top: 0.6rem;
+}
+
+.navigationMenu {
+  background-color: #2B587A;
+}
+.navigationMenu ul {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 0rem;
+}
+.navigationMenu ul li {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 2.1rem;
+  margin-right: 5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+@media (max-width: 600px) {
+  .navigationMenu__element_fourth {
+    padding-right: 12rem;
+  }
+}
+
+.carsFromEurope {
+  height: 75vh;
+  background-image: url("../img/peugeot-BGsmall.jpg");
+  background-position: center center;
+  /* Фон не повторяется */
+  background-repeat: no-repeat;
+  /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+  background-attachment: fixed;
+  /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
+  background-size: cover;
+  /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/
+  text-align: center;
+  vertical-align: middle;
+}
+.carsFromEurope__services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  height: 4rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.2rem;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

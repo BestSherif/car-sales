@@ -38,10 +38,8 @@
     будет отображаться в поисковой выдаче!!"
     />
   </head>
-
-  <!-- ! REM Размер font-size заменен на 10px и указан в % для простой адаптации, веди разработку в REM! -->
-
   <body>
+    <!-- шапка -->
     <header>
       <div class="сontactInformation">
         <div class="сontactInformation-logo сontactInformationCard">
@@ -53,7 +51,9 @@
           </div>
           <div class="сontactInformation_text">ТЕЛЕФОН</div>
           <div class="сontactInformation_information">
-            +375295785510 <br />+375299276446
+            <a href="tel:+1234567890">+375295785510</a>
+            <br />
+            <a href="tel:+375299276446">+375299276446</a>
           </div>
         </div>
         <div class="сontactInformation-workingHours сontactInformationCard">
@@ -74,14 +74,42 @@
         </div>
         <div class="сontactInformation-telegramLink сontactInformationCard">
           <div class="сontactInformation_img">
-            <img src="icons/telegram.png" alt="telegram" />
+            <a href="#"><img src="icons/telegram.png" alt="telegram" /></a>
           </div>
         </div>
       </div>
     </header>
-    <nav></nav>
+    <!-- Навигационное меню -->
+    <nav>
+      <div class="navigationMenu">
+        <ul>
+          <li class="navigationMenu__element">
+            <a href="#aboutMe">ГЛАВНАЯ</a>
+          </li>
+          <li class="navigationMenu__element"><a href="#">КАТАЛОГ АВТО</a></li>
+          <li class="navigationMenu__element"><a href="#">КАК ЗАКАЗАТЬ</a></li>
+          <li class="navigationMenu__element"><a href="#">ПРЕИМУЩЕСТВА</a></li>
+          <li class="navigationMenu__element_fourth">
+            <a href="#">СТОИМОСТЬ</a>
+          </li>
+          <li class="navigationMenu__element">
+            <a href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <main>
-      <section></section>
+      <section class="carsFromEurope">
+        <h1>
+          <p class="carsFromEurope__services">
+            ПОДБОР, ПОКУПКА, ДОСТАВКА, ТАМОЖНЯ
+            <br>
+            <hr>
+          </p>
+          <p class="carsFromEurope__carsFronEurope">АВТОМОБИЛИ ИЗ ЕВРОПЫ</p>
+          <p class="carsFromEurope__сonditions"></p>
+        </h1>
+      </section>
       <section></section>
       <section></section>
     </main>
