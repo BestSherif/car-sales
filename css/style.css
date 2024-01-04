@@ -44,7 +44,7 @@ html {
 }
 @media (min-width: 1800px) {
   html {
-    font-size: 75%;
+    font-size: 85%;
   }
 }
 
@@ -139,6 +139,12 @@ html {
   line-height: 2.2rem;
   color: white;
 }
+@media (max-width: 600px) {
+  .carsFromEurope__services {
+    font-size: 85%;
+    line-height: 4rem;
+  }
+}
 .carsFromEurope__services_hr {
   border: none;
   border-top: 0.3rem solid #2B587A;
@@ -166,5 +172,104 @@ html {
 @media (max-width: 600px) {
   .carsFromEurope__сonditions {
     font-size: 100%;
+  }
+}
+
+.turnkeyDelivery {
+  height: 55vh;
+  width: 100%;
+  display: flex;
+}
+.turnkeyDelivery-imgBlock {
+  width: 40%;
+  text-align: right;
+  padding-top: 8rem;
+}
+.turnkeyDelivery-imgBlock_img {
+  width: 40rem;
+  height: auto;
+}
+@media (max-width: 900px) {
+  .turnkeyDelivery-imgBlock_img {
+    width: 32rem;
+  }
+}
+.turnkeyDelivery-imgBlockPhone {
+  display: none;
+}
+@media (max-width: 600px) {
+  .turnkeyDelivery-imgBlockPhone {
+    width: 30rem;
+  }
+}
+.turnkeyDelivery-description {
+  max-width: 63rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-around;
+}
+@media (max-width: 600px) {
+  .turnkeyDelivery-description {
+    max-width: 150rem;
+  }
+}
+.turnkeyDelivery-description__text1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 2.2rem;
+}
+.turnkeyDelivery-description__turnkeyСarsFromEurope h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 4.6rem;
+}
+.turnkeyDelivery-description__experience {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgb(51, 51, 51);
+}
+@media (max-width: 600px) {
+  .turnkeyDelivery-description__experience {
+    font-size: 200%;
+  }
+}
+.turnkeyDelivery-description__card {
+  display: flex;
+  align-items: center;
+}
+.turnkeyDelivery-description__card-img img {
+  margin-right: 3rem;
+}
+.turnkeyDelivery-description__card-text_bigText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgb(33, 33, 33);
+  margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+  .turnkeyDelivery-description__card-text_bigText {
+    font-size: 200%;
+  }
+}
+.turnkeyDelivery-description__card-text_smallText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgb(51, 51, 51);
+}
+@media (max-width: 600px) {
+  .turnkeyDelivery-description__card-text_smallText {
+    font-size: 170%;
   }
 }/*# sourceMappingURL=style.css.map */
