@@ -30,7 +30,7 @@ html
     @include respond(phone)
         font-size: 30%
     @include respond(big-screen)
-        font-size: 75%
+        font-size: 85%
 
 .сontactInformation
     padding: 2rem 0 1rem 0
@@ -97,6 +97,9 @@ html
     &__services
         @include font3
         color: white
+        @include respond(phone)
+            font-size: 85%
+            line-height: 4rem
         &_hr
             border: none
             border-top: 0.3rem solid #2B587A
@@ -114,3 +117,61 @@ html
         color: white
         @include respond(phone)
             font-size: 100%
+.turnkeyDelivery
+    height: 55vh
+    width: 100%
+    display: flex
+
+    &-imgBlock
+        width: 40%
+        text-align: right
+        padding-top: 8rem
+        // @include respond(phone)
+        //     display: none
+        &_img
+            width: 40rem
+            height: auto
+            @include respond(tab-port)
+                width: 32rem
+    &-imgBlockPhone
+        display: none
+        @include respond(phone)
+            width: 30rem
+
+    &-description
+        max-width: 63rem
+        @include respond(phone)
+            max-width: 150rem
+        text-align: left
+        display: flex
+        flex-direction: column
+        text-align: left
+        justify-content: space-around
+        // @include respond(phone)
+        //     text-align: center
+        &__text1
+            @include font3
+        &__turnkeyСarsFromEurope
+            h2
+                @include font7
+        &__experience
+            @include font1
+            @include respond(phone)
+                font-size: 200%
+
+        &__card
+            display: flex
+            align-items: center
+            &-img
+                img
+                    margin-right: 3rem
+            &-text
+                &_bigText
+                    @include font2
+                    margin-bottom: 1rem
+                    @include respond(phone)
+                        font-size: 200%
+                &_smallText
+                    @include font1
+                    @include respond(phone)
+                        font-size: 170%
