@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -107,15 +114,9 @@ html {
   color: white;
   margin-bottom: 2rem;
 }
-@media (max-width: 600px) {
-  .navigationMenu__element_fourth {
-    padding-right: 12rem;
-  }
-}
 
 .carsFromEurope {
-  height: 75vh;
-  background-image: url("../img/peugeot-BGsmall.jpg");
+  background-image: url("../img/peugeot-BG.jpg");
   background-position: center center;
   /* Фон не повторяется */
   background-repeat: no-repeat;
@@ -126,13 +127,44 @@ html {
   /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/
   text-align: center;
   vertical-align: middle;
+  position: relative;
+  height: 75vh;
+  width: 100%;
 }
 .carsFromEurope__services {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
-  height: 4rem;
   letter-spacing: 0.1rem;
   line-height: 2.2rem;
   color: white;
+}
+.carsFromEurope__services_hr {
+  border: none;
+  border-top: 0.3rem solid #2B587A;
+  width: auto;
+  margin-bottom: 3rem;
+}
+.carsFromEurope__carsFromEurope {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  height: 4rem;
+  letter-spacing: 0.2rem;
+  line-height: 5rem;
+  color: white;
+  margin-bottom: 10rem;
+}
+.carsFromEurope__сonditions {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  line-height: 2.9rem;
+  color: white;
+}
+@media (max-width: 600px) {
+  .carsFromEurope__сonditions {
+    font-size: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

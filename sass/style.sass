@@ -1,7 +1,11 @@
+// @import "../css/reset.css"
+// @import "../css/normalize.css"
+
 @import "fonts/fonts.sass"
 @import "variables/variables.sass"
 @import "variables/mixin.sass"
 @import "variables/card.sass"
+@import "variables/auxiliary.sass"
 
 *, ::after, ::before
     margin: 0
@@ -41,7 +45,6 @@ html
         img
             width: 15rem
             height: auto
-
     &_img
         text-align: center
         @include respond(tab-port)
@@ -74,15 +77,10 @@ html
             margin-right: 5rem
             color: white
             margin-bottom: 2rem
-    &__element
-        &_fourth
-            @include respond(phone)
-                padding-right: 12rem
-
 .carsFromEurope
-    height: 75vh
-    // background-image: url('../img/peugeot-BG.jpg')
-    background-image: url('../img/peugeot-BGsmall.jpg')
+    background-image: url('../img/peugeot-BG.jpg')
+    // background-image: url('../img/peugeot-BGsmall.jpg')
+    // background-image: url('../img/BackgroundBMW.jpg')
     background-position: center center
     /* Фон не повторяется */
     background-repeat: no-repeat
@@ -93,6 +91,26 @@ html
     /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/
     text-align: center
     vertical-align: middle
+    position: relative
+    height: 75vh
+    width: 100%
     &__services
         @include font3
         color: white
+        &_hr
+            border: none
+            border-top: 0.3rem solid #2B587A
+            width: auto
+            margin-bottom: 3rem
+            // height: 5rem
+            // width: 60rem
+            // background-color: #2B587A
+    &__carsFromEurope
+        @include font4
+        color: white
+        margin-bottom: 10rem
+    &__сonditions
+        @include font5
+        color: white
+        @include respond(phone)
+            font-size: 100%
