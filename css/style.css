@@ -286,197 +286,111 @@ html {
   margin-bottom: 2rem;
 }
 .catalogOfPopularCarsFromEurope-Conteiner {
+  max-width: 120rem;
   height: auto;
   margin: 0 auto;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, 32rem);
-  grid-template-rows: repeat(6, 26.2rem);
+  grid-template-columns: repeat(auto-fill, 32rem);
+  grid-template-rows: repeat(6, 26rem);
   grid-gap: 2rem 2rem;
 }
 @media (max-width: 600px) {
   .catalogOfPopularCarsFromEurope-Conteiner {
-    grid-template-columns: repeat(3, 28rem);
-    grid-gap: 0.1rem 0.1rem;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-rows: repeat(18, 65rem);
   }
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-1 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-1_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/FordFiesta.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-2 {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-2_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/RenaultClio.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-3 {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-3_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/RenaultMegane.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-4 {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-4_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/BMW2-SERIESACTIVETOURER.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-5 {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-5_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/OpelZafira.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-6 {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-6_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/OpelInsignia.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-7 {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-7_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/FordMondeo.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-8 {
-  grid-column: 2/3;
-  grid-row: 4/5;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-8_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/RenaultTalismanGrandtour.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-9 {
-  grid-column: 3/4;
-  grid-row: 4/5;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-9_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/VolkswaggenPassat.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-10 {
-  grid-column: 1/2;
-  grid-row: 5/6;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-10_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/CitroenC4GRandPicasso.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-11 {
-  grid-column: 2/3;
-  grid-row: 5/6;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-11_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/fordKuga.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-12 {
-  grid-column: 3/4;
-  grid-row: 5/6;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-12_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/nissanQashqai.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-13 {
-  grid-column: 1/2;
-  grid-row: 6/7;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-13_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/RenaultGrandScenic.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-14 {
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-14_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/Peugeot3008.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-15 {
-  grid-column: 3/4;
-  grid-row: 3/4;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-15_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/VolkswagenTouran.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-16 {
-  grid-column: 1/2;
-  grid-row: 4/5;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-16_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/Audi.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-17 {
-  grid-column: 2/3;
-  grid-row: 6/7;
-}
-.catalogOfPopularCarsFromEurope-Conteiner .card-17_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../img/MercedesBenz.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-18 {
-  grid-column: 3/4;
-  grid-row: 6/7;
+  background-image: url("../img/VolvoXC90.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
-.catalogOfPopularCarsFromEurope-Conteiner .card-18_img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+.catalogOfPopularCarsFromEurope-Conteiner .cards {
+  margin: 0 3rem 0 3rem;
 }/*# sourceMappingURL=style.css.map */
