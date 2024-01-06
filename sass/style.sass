@@ -325,3 +325,32 @@ html
                 color: white
                 @include respond(phone)
                     font-size: 200%
+
+.question
+    text-align: center
+    padding: 5rem 0 5rem 0
+    background-color: #F8F8F8
+    max-width: 144rem
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    align-content: center
+    &__text
+        margin-right: 5rem
+        &_big
+            margin-bottom: 1rem
+            @include font2
+            @include respond(phone)
+                font-size: 160%
+        &_small
+            @include font1
+            @include respond(phone)
+                font-size: 160%
+                margin-bottom: 2rem
+    &__link
+        &_button
+            height: 6rem
+            width: 23rem
+            background-color: #399297
+            color: white
+            @include font6
