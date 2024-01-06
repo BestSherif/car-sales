@@ -23,8 +23,6 @@ html
         font-size: 50%
     @include respond(phone)
         font-size: 35%
-    // @include respond(big-screen)
-    //     font-size: 75%
 
 .сontactInformation
     padding: 2rem 0 1rem 0
@@ -151,7 +149,6 @@ html
         flex-direction: column
         text-align: left
         justify-content: space-around
-        @include respond(phone)
 
         &__text1
             @include font3
@@ -163,10 +160,9 @@ html
                 @include font7
         &__experience
             margin-bottom: 1rem
-            @include respond(phone)
-                padding: 0 3rem 0 3rem
             @include font5
             @include respond(phone)
+                padding: 0 3rem 0 3rem
                 font-size: 250%
 
         &__card
@@ -341,7 +337,7 @@ html
 .question
     margin: 0 auto
     text-align: center
-    padding: 5rem 0 5rem 0
+    padding: 5rem 0 5rem 5rem
     background-color: #F8F8F8
     // max-width: 144rem
     display: flex
@@ -371,6 +367,5 @@ html
             @include respond(phone)
                 height: 8rem
                 width: 30rem
-            @include font6
-            @include respond(phone)
                 font-size: 200%
+            @include font6

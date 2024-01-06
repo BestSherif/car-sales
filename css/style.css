@@ -136,7 +136,7 @@ html a {
 }
 .carsFromEurope__services {
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: white;
 }
@@ -223,7 +223,7 @@ html a {
 }
 .turnkeyDelivery-description__text1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   align-self: center;
   margin-bottom: 1rem;
@@ -245,10 +245,6 @@ html a {
 @media (max-width: 600px) {
   .turnkeyDelivery-description__experience {
     padding: 0 3rem 0 3rem;
-  }
-}
-@media (max-width: 600px) {
-  .turnkeyDelivery-description__experience {
     font-size: 250%;
   }
 }
@@ -262,7 +258,7 @@ html a {
 }
 .turnkeyDelivery-description__card-text_bigText {
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 @media (max-width: 600px) {
@@ -478,7 +474,7 @@ html a {
 .catalogOfPopularCarsFromEurope-Conteiner .cards__modelCar {
   text-align: left;
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: white;
 }
@@ -505,7 +501,7 @@ html a {
 .question {
   margin: 0 auto;
   text-align: center;
-  padding: 5rem 0 5rem 0;
+  padding: 5rem 0 5rem 5rem;
   background-color: #F8F8F8;
   display: flex;
   flex-flow: row wrap;
@@ -519,7 +515,7 @@ html a {
 .question__text_big {
   margin-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 @media (max-width: 600px) {
@@ -552,10 +548,6 @@ html a {
   .question__link_button {
     height: 8rem;
     width: 30rem;
-  }
-}
-@media (max-width: 600px) {
-  .question__link_button {
     font-size: 200%;
   }
 }/*# sourceMappingURL=style.css.map */
