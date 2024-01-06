@@ -1,6 +1,3 @@
-// @import "../css/reset.css"
-// @import "../css/normalize.css"
-
 @import "fonts/fonts.sass"
 @import "variables/variables.sass"
 @import "variables/mixin.sass"
@@ -20,17 +17,14 @@ html
     a
         text-decoration: none
         color: inherit
-
-html
-    font-size: 62.5%
     @include respond(tab-land)
         font-size: 56.25%
     @include respond(tab-port)
         font-size: 50%
     @include respond(phone)
-        font-size: 30%
-    @include respond(big-screen)
-        font-size: 85%
+        font-size: 35%
+    // @include respond(big-screen)
+    //     font-size: 75%
 
 .сontactInformation
     padding: 2rem 0 1rem 0
@@ -54,17 +48,24 @@ html
             height: auto
     &_text
         @include font1
+        @include respond(phone)
+            font-size: 200%
     &_information
         @include font2
         a
             text-decoration: none
             color: inherit
+        @include respond(phone)
+            font-size: 180%
     &-telegramLink
         padding-top: 0.6rem
+    &-email
+        @include respond(phone)
+            display: none
 
 .navigationMenu
-    // @include respond(phone)
-    //     display: none
+    @include respond(phone)
+        display: none
     background-color: $backgroundColorSecond
     ul
         list-style-type: none
@@ -83,11 +84,11 @@ html
     // background-image: url('../img/peugeot-BGsmall.jpg')
     // background-image: url('../img/BackgroundBMW.jpg')
     background-position: center center
-    /* Фон не повторяется */
+    // /* Фон не повторяется */
     background-repeat: no-repeat
-    /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
-    background-attachment: fixed
-    /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
+    // /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+    // background-attachment: fixed
+    // /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
     background-size: cover
     /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/
 
@@ -122,6 +123,7 @@ html
     width: 100%
     display: flex
     margin-bottom: 5rem
+    padding: 3rem 0 3rem 0
     background-color: #F9FEFF
     padding-bottom: 5rem
 
@@ -129,8 +131,8 @@ html
         width: 40%
         text-align: right
         padding-top: 8rem
-        // @include respond(phone)
-        //     display: none
+        @include respond(phone)
+            display: none
         &_img
             width: 40rem
             height: auto
@@ -149,34 +151,42 @@ html
         flex-direction: column
         text-align: left
         justify-content: space-around
-        padding-top: 3rem
+        @include respond(phone)
 
         &__text1
             @include font3
+            align-self: center
+            margin-bottom: 1rem
         &__turnkeyСarsFromEurope
+            align-self: center
             h2
                 @include font7
         &__experience
-            @include font1
+            margin-bottom: 1rem
             @include respond(phone)
-                font-size: 200%
+                padding: 0 3rem 0 3rem
+            @include font5
+            @include respond(phone)
+                font-size: 250%
 
         &__card
             display: flex
             align-items: center
+            padding: 0 3rem 0 3rem
             &-img
                 img
                     margin-right: 3rem
             &-text
                 &_bigText
-                    @include font2
-                    margin-bottom: 1rem
+                    @include font3
+                    // margin-bottom: 1rem
                     @include respond(phone)
                         font-size: 200%
                 &_smallText
-                    @include font1
+                    @include font5
+                    margin-bottom: 1rem
                     @include respond(phone)
-                        font-size: 170%
+                        font-size: 250%
 
 .catalogOfPopularCarsFromEurope
     text-align: center
@@ -187,6 +197,8 @@ html
     h4
         @include font5
         margin-bottom: 2rem
+        @include respond(phone)
+            font-size: 250%
     &-Conteiner
         max-width: 120rem
         height: auto
@@ -284,7 +296,7 @@ html
                 width: auto
                 height: 25px
                 background-color: black
-                opacity: 0.5
+                opacity: 0.7
                 display: flex
                 justify-content: center
                 align-items: center
@@ -327,30 +339,38 @@ html
                     font-size: 200%
 
 .question
+    margin: 0 auto
     text-align: center
     padding: 5rem 0 5rem 0
     background-color: #F8F8F8
-    max-width: 144rem
+    // max-width: 144rem
     display: flex
     flex-flow: row wrap
     justify-content: center
     align-content: center
     &__text
         margin-right: 5rem
+        width: 60vh
         &_big
             margin-bottom: 1rem
-            @include font2
+            @include font3
             @include respond(phone)
-                font-size: 160%
+                font-size: 300%
+                margin-bottom: 3rem
         &_small
-            @include font1
+            @include font5
             @include respond(phone)
-                font-size: 160%
-                margin-bottom: 2rem
+                font-size: 250%
+                margin-bottom: 3rem
     &__link
         &_button
-            height: 6rem
-            width: 23rem
             background-color: #399297
             color: white
+            height: 6rem
+            width: 23rem
+            @include respond(phone)
+                height: 8rem
+                width: 30rem
             @include font6
+            @include respond(phone)
+                font-size: 200%
