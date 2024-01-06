@@ -107,9 +107,7 @@ html
             border-top: 0.3rem solid #2B587A
             width: auto
             margin-bottom: 3rem
-            // height: 5rem
-            // width: 60rem
-            // background-color: #2B587A
+
     &__carsFromEurope
         @include font4
         color: white
@@ -120,11 +118,12 @@ html
         @include respond(phone)
             font-size: 100%
 .turnkeyDelivery
-    height: 55vh
+    height: auto
     width: 100%
     display: flex
     margin-bottom: 5rem
     background-color: #F9FEFF
+    padding-bottom: 5rem
 
     &-imgBlock
         width: 40%
@@ -141,7 +140,6 @@ html
         display: none
         @include respond(phone)
             width: 30rem
-
     &-description
         max-width: 63rem
         @include respond(phone)
@@ -151,8 +149,8 @@ html
         flex-direction: column
         text-align: left
         justify-content: space-around
-        // @include respond(phone)
-        //     text-align: center
+        padding-top: 3rem
+
         &__text1
             @include font3
         &__turnkeyСarsFromEurope
@@ -182,9 +180,12 @@ html
 
 .catalogOfPopularCarsFromEurope
     text-align: center
+    padding-bottom: 5rem
     h3
+        @include font7
         margin-bottom: 2rem
     h4
+        @include font5
         margin-bottom: 2rem
     &-Conteiner
         max-width: 120rem
@@ -192,7 +193,7 @@ html
         margin: 0 auto
         display: grid
         justify-content: center
-        grid-template-columns: repeat(auto-fill, 32rem)
+        grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr))
         grid-template-rows: repeat(6, 26rem)
         grid-gap: 2rem 2rem
         @include respond(phone)
@@ -272,4 +273,55 @@ html
             background-repeat: no-repeat
 
         .cards
-            margin: 0 3rem 0 3rem
+            margin: 0 1rem 0 1rem
+            padding: 2rem 2rem 3rem 2rem
+            @include respond(phone)
+                margin: 0 3rem 0 3rem
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            &__price
+                width: auto
+                height: 25px
+                background-color: black
+                opacity: 0.5
+                display: flex
+                justify-content: center
+                align-items: center
+                &_text
+                    @include font2
+                    color: white
+                    margin-right: 1rem
+                    @include respond(phone)
+                        font-size: 200%
+                &_euro
+                    @include font2
+                    color: #399297
+                    @include respond(phone)
+                        font-size: 200%
+            &__carParameters
+                padding: 1rem
+                width: auto
+                background-color: black
+                opacity: 0.5
+
+            &__yearCar
+                @include font2
+                color: white
+                text-align: left
+                @include respond(phone)
+                    font-size: 200%
+                    margin-bottom: 1rem
+            &__modelCar
+                text-align: left
+                @include font3
+                color: white
+                @include respond(phone)
+                    font-size: 200%
+                    margin-bottom: 1rem
+            &__deliveryTerms
+                text-align: left
+                @include font1
+                color: white
+                @include respond(phone)
+                    font-size: 200%

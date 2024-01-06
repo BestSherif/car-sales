@@ -176,11 +176,12 @@ html {
 }
 
 .turnkeyDelivery {
-  height: 55vh;
+  height: auto;
   width: 100%;
   display: flex;
   margin-bottom: 5rem;
   background-color: #F9FEFF;
+  padding-bottom: 5rem;
 }
 .turnkeyDelivery-imgBlock {
   width: 40%;
@@ -211,6 +212,7 @@ html {
   flex-direction: column;
   text-align: left;
   justify-content: space-around;
+  padding-top: 3rem;
 }
 @media (max-width: 600px) {
   .turnkeyDelivery-description {
@@ -278,11 +280,22 @@ html {
 
 .catalogOfPopularCarsFromEurope {
   text-align: center;
+  padding-bottom: 5rem;
 }
 .catalogOfPopularCarsFromEurope h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 4.6rem;
   margin-bottom: 2rem;
 }
 .catalogOfPopularCarsFromEurope h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  line-height: 2.9rem;
   margin-bottom: 2rem;
 }
 .catalogOfPopularCarsFromEurope-Conteiner {
@@ -291,7 +304,7 @@ html {
   margin: 0 auto;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, 32rem);
+  grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
   grid-template-rows: repeat(6, 26rem);
   grid-gap: 2rem 2rem;
 }
@@ -392,5 +405,100 @@ html {
   background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .cards {
-  margin: 0 3rem 0 3rem;
+  margin: 0 1rem 0 1rem;
+  padding: 2rem 2rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromEurope-Conteiner .cards {
+    margin: 0 3rem 0 3rem;
+  }
+}
+.catalogOfPopularCarsFromEurope-Conteiner .cards__price {
+  width: auto;
+  height: 25px;
+  background-color: black;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catalogOfPopularCarsFromEurope-Conteiner .cards__price_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgb(33, 33, 33);
+  color: white;
+  margin-right: 1rem;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromEurope-Conteiner .cards__price_text {
+    font-size: 200%;
+  }
+}
+.catalogOfPopularCarsFromEurope-Conteiner .cards__price_euro {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgb(33, 33, 33);
+  color: #399297;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromEurope-Conteiner .cards__price_euro {
+    font-size: 200%;
+  }
+}
+.catalogOfPopularCarsFromEurope-Conteiner .cards__carParameters {
+  padding: 1rem;
+  width: auto;
+  background-color: black;
+  opacity: 0.5;
+}
+.catalogOfPopularCarsFromEurope-Conteiner .cards__yearCar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgb(33, 33, 33);
+  color: white;
+  text-align: left;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromEurope-Conteiner .cards__yearCar {
+    font-size: 200%;
+    margin-bottom: 1rem;
+  }
+}
+.catalogOfPopularCarsFromEurope-Conteiner .cards__modelCar {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 2.2rem;
+  color: white;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromEurope-Conteiner .cards__modelCar {
+    font-size: 200%;
+    margin-bottom: 1rem;
+  }
+}
+.catalogOfPopularCarsFromEurope-Conteiner .cards__deliveryTerms {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgb(51, 51, 51);
+  color: white;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromEurope-Conteiner .cards__deliveryTerms {
+    font-size: 200%;
+  }
 }/*# sourceMappingURL=style.css.map */
