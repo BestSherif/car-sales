@@ -44,7 +44,7 @@ html a {
   background-color: #F9FEFF;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
 }
 .сontactInformation-logo img {
@@ -91,10 +91,20 @@ html a {
 }
 .сontactInformation-telegramLink {
   padding-top: 0.6rem;
+  align-self: center;
 }
 @media (max-width: 600px) {
   .сontactInformation-email {
     display: none;
+  }
+}
+
+.сontactInformationCard {
+  min-width: 22rem;
+}
+@media (max-width: 600px) {
+  .сontactInformationCard {
+    min-width: 15rem;
   }
 }
 
@@ -825,4 +835,15 @@ html a {
   .costOfServices__box_price p {
     font-size: 50%;
   }
+}
+
+.developmentAndSupport {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: rgb(51, 51, 51);
+}
+.developmentAndSupport a {
+  color: blue;
 }/*# sourceMappingURL=style.css.map */
