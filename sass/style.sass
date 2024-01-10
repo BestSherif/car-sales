@@ -378,8 +378,7 @@ html
 .schemeOfWork
     max-width: 144rem
     margin: 0 auto
-    margin-bottom: 3rem
-    padding: 0rem 2rem 5rem 2rem
+    padding: 0rem 2rem 0rem 2rem
     &__headers
         display: flex
         flex-direction: column
@@ -446,3 +445,53 @@ html
                         font-size: 250%
                     li
                         padding-top: 1rem
+
+.advantage
+    margin-bottom: 3rem
+    padding: 5rem 2rem 5rem 2rem
+    background-color: #F8F8F8
+    &__headers
+        max-width: 144rem
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        &_mainText
+            @include font7
+            // margin-bottom: 1rem
+        &_secondText
+            h6
+                margin-bottom: 5rem
+                @include font5
+                @include respond(phone)
+                    font-size: 300%
+
+    &_centeringBox
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-evenly
+    &__box
+        min-width: 310px
+        max-width: 40rem
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        margin-bottom: 5rem
+        &_img
+            width: 80px
+            height: 80px
+            margin-right: 5rem
+        &_text
+            align-self: center
+            span
+                @include font3
+                @include respond(phone)
+                    font-size: 250%
+            p
+                padding-top: 1rem
+                @include font5
+                @include respond(phone)
+                    font-size: 250%
