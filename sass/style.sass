@@ -447,7 +447,6 @@ html
                         padding-top: 1rem
 
 .advantage
-    margin-bottom: 3rem
     padding: 5rem 2rem 5rem 2rem
     background-color: #F8F8F8
     &__headers
@@ -495,3 +494,58 @@ html
                 @include font5
                 @include respond(phone)
                     font-size: 250%
+
+.costOfServices
+    margin-bottom: 3rem
+    padding: 5rem 2rem 5rem 2rem
+    &__headers
+        max-width: 144rem
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        &_mainText
+            @include font7
+            // margin-bottom: 1rem
+        &_secondText
+            h6
+                margin-bottom: 5rem
+                @include font5
+                @include respond(phone)
+                    font-size: 300%
+
+    &_centeringBox
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-evenly
+    &__box
+        padding: 1rem
+        min-width: 310px
+        max-width: 55rem
+        display: flex
+        justify-content: center
+        margin-bottom: 5rem
+        text-align: center
+        border: 0.1rem solid #399297
+        box-shadow: 0 0 10px rgb(57, 146, 151, 0.5)
+        &_text
+            align-self: center
+            span
+                @include font3
+                @include respond(phone)
+                    font-size: 250%
+            p
+                @include font5
+                @include respond(phone)
+                    font-size: 250%
+        &_price
+            @include font7
+            padding-top: 1rem
+            line-height: 4rem
+            color: #2B587A
+            p
+                @include font3
+                @include respond(phone)
+                    font-size: 50%
