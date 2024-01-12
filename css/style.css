@@ -133,7 +133,7 @@ html a {
 }
 
 .carsFromEurope {
-  background-image: url("../img/peugeot-BG.jpg");
+  background-image: url("../img/peugeot-BGsmall.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -297,7 +297,7 @@ html a {
 
 .catalogOfPopularCarsFromEurope {
   text-align: center;
-  padding-bottom: 5rem;
+  padding: 0rem 1rem 5rem 1rem;
 }
 .catalogOfPopularCarsFromEurope h3 {
   font-family: "Montserrat", sans-serif;
@@ -323,7 +323,7 @@ html a {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
-  grid-template-rows: repeat(6, 26rem);
+  grid-auto-rows: minmax(32rem, auto);
   grid-gap: 2rem 2rem;
 }
 @media (max-width: 600px) {
@@ -336,6 +336,8 @@ html a {
   background-image: url("../img/FordFiesta.jpeg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-2 {
   background-image: url("../img/RenaultClio.jpeg");
@@ -424,14 +426,15 @@ html a {
 }
 .catalogOfPopularCarsFromEurope-Conteiner .cards {
   margin: 0 1rem 0 1rem;
-  padding: 2rem 2rem 3rem 2rem;
+  padding: 1rem 1rem 0.5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 @media (max-width: 600px) {
   .catalogOfPopularCarsFromEurope-Conteiner .cards {
-    margin: 0 3rem 0 3rem;
+    margin: 0 2rem 0 2rem;
+    padding: 2rem 0rem 2rem 0rem;
   }
 }
 .catalogOfPopularCarsFromEurope-Conteiner .cards__price {
@@ -751,8 +754,7 @@ html a {
 }
 
 .costOfServices {
-  margin-bottom: 3rem;
-  padding: 5rem 2rem 5rem 2rem;
+  padding: 5rem 2rem 1rem 2rem;
 }
 .costOfServices__headers {
   max-width: 144rem;
@@ -790,7 +792,7 @@ html a {
   max-width: 55rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   text-align: center;
   border: 0.1rem solid #399297;
   box-shadow: 0 0 10px rgba(57, 146, 151, 0.5);

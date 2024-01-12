@@ -82,9 +82,9 @@ html
             color: white
             margin-bottom: 2rem
 .carsFromEurope
-    background-image: url('../img/peugeot-BG.jpg')
+    // background-image: url('../img/peugeot-BG.jpg')
 
-    // background-image: url('../img/peugeot-BGsmall.jpg')
+    background-image: url('../img/peugeot-BGsmall.jpg')
     // background-image: url('../img/BackgroundBMW.jpg')
     background-position: center center
     // /* Фон не повторяется */
@@ -195,7 +195,7 @@ html
 
 .catalogOfPopularCarsFromEurope
     text-align: center
-    padding-bottom: 5rem
+    padding: 0rem 1rem 5rem 1rem
     h3
         @include font7
         margin-bottom: 2rem
@@ -210,8 +210,10 @@ html
         margin: 0 auto
         display: grid
         justify-content: center
+        // grid-template-columns: repeat(auto-fill, 32rem)
         grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr))
-        grid-template-rows: repeat(6, 26rem)
+        // grid-template-rows: repeat(6, 26rem)
+        grid-auto-rows: minmax(32rem, auto)
         grid-gap: 2rem 2rem
         @include respond(phone)
             grid-template-columns: repeat(auto-fit, minmax(310px, 1fr))
@@ -220,6 +222,8 @@ html
             background-image: url('../img/FordFiesta.jpeg')
             background-size: 100% 100%
             background-repeat: no-repeat
+            -o-object-fit: cover
+            object-fit: cover
         .card-2
             background-image: url('../img/RenaultClio.jpeg')
             background-size: 100% 100%
@@ -291,9 +295,10 @@ html
 
         .cards
             margin: 0 1rem 0 1rem
-            padding: 2rem 2rem 3rem 2rem
+            padding: 1rem 1rem 0.5rem 1rem
             @include respond(phone)
-                margin: 0 3rem 0 3rem
+                margin: 0 2rem 0 2rem
+                padding: 2rem 0rem 2rem 0rem
             display: flex
             flex-direction: column
             justify-content: space-between
@@ -501,8 +506,7 @@ html
                     font-size: 250%
 
 .costOfServices
-    margin-bottom: 3rem
-    padding: 5rem 2rem 5rem 2rem
+    padding: 5rem 2rem 1rem 2rem
     &__headers
         max-width: 144rem
         margin: 0 auto
@@ -531,7 +535,7 @@ html
         max-width: 55rem
         display: flex
         justify-content: center
-        margin-bottom: 5rem
+        margin-bottom: 2rem
         text-align: center
         border: 0.1rem solid #399297
         box-shadow: 0 0 10px rgb(57, 146, 151, 0.5)
