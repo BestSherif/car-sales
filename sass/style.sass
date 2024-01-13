@@ -1,7 +1,6 @@
 @import "fonts/fonts.sass"
 @import "variables/variables.sass"
 @import "variables/mixin.sass"
-@import "variables/card.sass"
 @import "variables/auxiliary.sass"
 
 *, ::after, ::before
@@ -26,12 +25,10 @@ html
 
 .сontactInformation
     padding: 2rem 0 1rem 0
-    // max-width: 144rem
     background-color: $backgroundColor
     display: flex
     flex-flow: row wrap
     justify-content: space-evenly
-    // align-items: center
     text-align: center
     &-logo
         img
@@ -82,19 +79,10 @@ html
             color: white
             margin-bottom: 2rem
 .carsFromEurope
-    // background-image: url('../img/peugeot-BG.jpg')
-
-    background-image: url('../img/peugeot-BGsmall.jpg')
-    // background-image: url('../img/BackgroundBMW.jpg')
+    background-image: url('../img/peugeot-BGsmall.webp')
     background-position: center center
-    // /* Фон не повторяется */
     background-repeat: no-repeat
-    // /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
-    // background-attachment: fixed
-    // /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
     background-size: cover
-    /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/
-
     text-align: center
     vertical-align: middle
     position: relative
@@ -110,12 +98,14 @@ html
             border: none
             border-top: 0.3rem solid #2B587A
             width: auto
-            margin-bottom: 3rem
+            margin-bottom: 1rem
 
     &__carsFromEurope
         @include font4
         color: white
-        margin-bottom: 10rem
+        margin-bottom: 12rem
+        @include respond(tab-port)
+            margin-bottom: 15rem
     &__сonditions
         @include font5
         color: white
@@ -183,7 +173,6 @@ html
             &-text
                 &_bigText
                     @include font3
-                    // margin-bottom: 1rem
                     @include respond(phone)
                         font-size: 200%
                 &_smallText
@@ -192,7 +181,6 @@ html
                     @include respond(phone)
                         font-size: 250%
                         margin-bottom: 2rem
-
 .catalogOfPopularCarsFromEurope
     text-align: center
     padding: 0rem 1rem 5rem 1rem
@@ -210,86 +198,84 @@ html
         margin: 0 auto
         display: grid
         justify-content: center
-        // grid-template-columns: repeat(auto-fill, 32rem)
         grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr))
-        // grid-template-rows: repeat(6, 26rem)
         grid-auto-rows: minmax(32rem, auto)
         grid-gap: 2rem 2rem
         @include respond(phone)
             grid-template-columns: repeat(auto-fit, minmax(310px, 1fr))
             grid-template-rows: repeat(18, 65rem)
         .card-1
-            background-image: url('../img/FordFiesta.jpeg')
+            background-image: url('../img/FordFiesta.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
             -o-object-fit: cover
             object-fit: cover
         .card-2
-            background-image: url('../img/RenaultClio.jpeg')
+            background-image: url('../img/RenaultClio.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-3
-            background-image: url('../img/RenaultMegane.jpeg')
+            background-image: url('../img/RenaultMegane.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-4
-            background-image: url('../img/BMW2-SERIESACTIVETOURER.jpeg')
+            background-image: url('../img/BMW2-SERIESACTIVETOURER.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-5
-            background-image: url('../img/OpelZafira.jpeg')
+            background-image: url('../img/OpelZafira.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-6
-            background-image: url('../img/OpelInsignia.jpeg')
+            background-image: url('../img/OpelInsignia.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-7
-            background-image: url('../img/FordMondeo.jpeg')
+            background-image: url('../img/FordMondeo.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-8
-            background-image: url('../img/RenaultTalismanGrandtour.jpeg')
+            background-image: url('../img/RenaultTalismanGrandtour.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-9
-            background-image: url('../img/VolkswaggenPassat.jpeg')
+            background-image: url('../img/VolkswaggenPassat.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-10
-            background-image: url('../img/CitroenC4GRandPicasso.jpeg')
+            background-image: url('../img/CitroenC4GRandPicasso.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-11
-            background-image: url('../img/fordKuga.jpeg')
+            background-image: url('../img/fordKuga.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-12
-            background-image: url('../img/nissanQashqai.jpeg')
+            background-image: url('../img/nissanQashqai.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-13
-            background-image: url('../img/RenaultGrandScenic.jpeg')
+            background-image: url('../img/RenaultGrandScenic.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-14
-            background-image: url('../img/Peugeot3008.jpeg')
+            background-image: url('../img/Peugeot3008.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-15
-            background-image: url('../img/VolkswagenTouran.jpeg')
+            background-image: url('../img/VolkswagenTouran.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-16
-            background-image: url('../img/Audi.jpeg')
+            background-image: url('../img/Audi.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-17
-            background-image: url('../img/MercedesBenz.jpeg')
+            background-image: url('../img/MercedesBenz.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-18
-            background-image: url('../img/VolvoXC90.jpeg')
+            background-image: url('../img/VolvoXC90.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
 
@@ -347,17 +333,15 @@ html
                 color: white
                 @include respond(phone)
                     font-size: 200%
-
 .question
     margin: 0 auto
     text-align: center
     padding: 5rem 2rem 5rem 2rem
     background-color: #F8F8F8
-    // max-width: 144rem
     display: flex
     flex-flow: row wrap
     justify-content: center
-    align-content: center
+    align-items: center
     margin-bottom: 3rem
     &__text
         margin-right: 5rem
@@ -384,7 +368,6 @@ html
                 width: 30rem
                 font-size: 200%
             @include font6
-
 .schemeOfWork
     max-width: 144rem
     margin: 0 auto
@@ -397,8 +380,6 @@ html
         text-align: center
         &_mainText
             @include font7
-            // margin-bottom: 1rem
-
         &_secondText
             h5
                 margin-bottom: 5rem
@@ -455,7 +436,6 @@ html
                         font-size: 250%
                     li
                         padding-top: 1rem
-
 .advantage
     padding: 5rem 2rem 5rem 2rem
     background-color: #F8F8F8
@@ -469,7 +449,6 @@ html
         text-align: center
         &_mainText
             @include font7
-            // margin-bottom: 1rem
         &_secondText
             h6
                 margin-bottom: 5rem
@@ -504,7 +483,6 @@ html
                 @include font5
                 @include respond(phone)
                     font-size: 250%
-
 .costOfServices
     padding: 5rem 2rem 1rem 2rem
     &__headers
@@ -517,7 +495,6 @@ html
         text-align: center
         &_mainText
             @include font7
-            // margin-bottom: 1rem
         &_secondText
             h6
                 margin-bottom: 5rem
@@ -558,7 +535,6 @@ html
                 @include font3
                 @include respond(phone)
                     font-size: 50%
-
 .developmentAndSupport
     text-align: center
     @include font1
