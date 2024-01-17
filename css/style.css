@@ -334,8 +334,8 @@ html a {
 }
 @media (max-width: 600px) {
   .catalogOfPopularCarsFromEurope-Conteiner {
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    grid-template-rows: repeat(18, 65rem);
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-template-rows: repeat(18, 280px);
   }
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-1 {
@@ -439,8 +439,7 @@ html a {
 }
 @media (max-width: 600px) {
   .catalogOfPopularCarsFromEurope-Conteiner .cards {
-    margin: 0 2rem 0 2rem;
-    padding: 2rem 0rem 2rem 0rem;
+    margin: 0;
   }
 }
 .catalogOfPopularCarsFromEurope-Conteiner .cards__price {
@@ -494,7 +493,6 @@ html a {
 @media (max-width: 600px) {
   .catalogOfPopularCarsFromEurope-Conteiner .cards__yearCar {
     font-size: 200%;
-    margin-bottom: 1rem;
   }
 }
 .catalogOfPopularCarsFromEurope-Conteiner .cards__modelCar {
@@ -507,7 +505,6 @@ html a {
 @media (max-width: 600px) {
   .catalogOfPopularCarsFromEurope-Conteiner .cards__modelCar {
     font-size: 200%;
-    margin-bottom: 1rem;
   }
 }
 .catalogOfPopularCarsFromEurope-Conteiner .cards__deliveryTerms {

@@ -202,8 +202,8 @@ html
         grid-auto-rows: minmax(32rem, auto)
         grid-gap: 2rem 2rem
         @include respond(phone)
-            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr))
-            grid-template-rows: repeat(18, 65rem)
+            grid-template-columns: repeat(auto-fit, 320px)
+            grid-template-rows: repeat(18, 280px)
         .card-1
             background-image: url('../img/FordFiesta.webp')
             background-size: 100% 100%
@@ -283,8 +283,8 @@ html
             margin: 0 1rem 0 1rem
             padding: 1rem 1rem 0.5rem 1rem
             @include respond(phone)
-                margin: 0 2rem 0 2rem
-                padding: 2rem 0rem 2rem 0rem
+                margin: 0
+                // padding: 2rem 0rem 2rem 0rem
             display: flex
             flex-direction: column
             justify-content: space-between
@@ -319,14 +319,14 @@ html
                 text-align: left
                 @include respond(phone)
                     font-size: 200%
-                    margin-bottom: 1rem
+                    // margin-bottom: 0.5rem
             &__modelCar
                 text-align: left
                 @include font3
                 color: white
                 @include respond(phone)
                     font-size: 200%
-                    margin-bottom: 1rem
+                    // margin-bottom: 0.5rem
             &__deliveryTerms
                 text-align: left
                 @include font1
