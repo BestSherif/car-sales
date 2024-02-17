@@ -1,4 +1,15 @@
 @charset "UTF-8";
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .center {
   position: absolute;
   top: 50%;
@@ -6,6 +17,22 @@
   transform: translate(-50%, -50%);
   height: auto;
   margin: 0 auto;
+}
+
+.centerUSA {
+  padding: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  min-width: 60rem;
+  margin: 0 auto;
+  background-color: rgba(2, 0, 0, 0.6);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space;
 }
 
 *, ::after, ::before {
@@ -121,7 +148,7 @@ html a {
 .navigationMenu ul {
   list-style-type: none;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   margin-bottom: 0rem;
 }
 .navigationMenu ul li {
@@ -131,7 +158,48 @@ html a {
   font-weight: 700;
   margin-right: 5rem;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  transition: 1s all;
+}
+.navigationMenu ul li a:hover {
+  color: inherit;
+}
+.navigationMenu__element {
+  list-style: none;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .navigationMenu {
+    position: absolute;
+    left: 1rem;
+    top: 21rem;
+  }
+}
+.navigationMenu__element {
+  display: inline-block;
+}
+.navigationMenu__element:not(:last-child) {
+  margin-right: 5rem;
+}
+@media (max-width: 1200px) {
+  .navigationMenu__element:not(:last-child) {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+.navigationMenu__element:link, .navigationMenu__element:visited {
+  color: #369D7E;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  transition: 1s all;
+  display: inline-block;
+}
+.navigationMenu__element:hover {
+  color: inherit;
+  transform: rotate(5deg) scale(1.2);
+  color: #369D7E;
 }
 
 .carsFromEurope {
@@ -142,7 +210,7 @@ html a {
   text-align: center;
   vertical-align: middle;
   position: relative;
-  height: 75vh;
+  min-height: 75vh;
   width: 100%;
 }
 .carsFromEurope__services {
@@ -187,6 +255,102 @@ html a {
     font-size: 100%;
   }
 }
+.carsFromEurope__button {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 2rem;
+}
+
+.carsFromUSA {
+  background-image: url("../img/AmericaLogo.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  vertical-align: middle;
+  position: relative;
+  height: 75vh;
+  width: 100%;
+}
+.carsFromUSA__services {
+  position: relative;
+  margin-top: 18rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+@media (max-width: 900px) {
+  .carsFromUSA__services {
+    font-size: 80%;
+    line-height: 4rem;
+    margin-top: 8rem;
+  }
+}
+.carsFromUSA__carsFromEurope {
+  position: relative;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  height: 4rem;
+  color: white;
+}
+@media (max-width: 900px) {
+  .carsFromUSA__carsFromEurope {
+    font-size: 110%;
+  }
+}
+.carsFromUSA__button {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 2rem;
+}
+
+.animatedButton {
+  z-index: 1;
+  display: none;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-size: 2.2rem;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-color: #399297;
+  opacity: 0.9;
+}
+@media (max-width: 600px) {
+  .animatedButton {
+    display: block;
+  }
+}
+.animatedButton_firstButton {
+  width: 27rem;
+}
+
+.firstLink {
+  position: fixed;
+  z-index: 1;
+  top: 13rem;
+  transition: top 1s ease;
+}
+
+.secondLink {
+  position: fixed;
+  z-index: 1;
+  top: 20rem;
+  animation: pulse 2s infinite;
+  transition: top 1s ease;
+}
+.secondLink:hover {
+  background-color: #2980b9;
+}
 
 .turnkeyDelivery {
   height: auto;
@@ -225,7 +389,6 @@ html a {
   }
 }
 .turnkeyDelivery-description {
-  max-width: 63rem;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -301,6 +464,16 @@ html a {
   }
 }
 
+.question__link_button {
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 600px) {
+  .question__link_button {
+    display: none;
+  }
+}
+
 .catalogOfPopularCarsFromEurope {
   text-align: center;
   padding: 0rem 1rem 5rem 1rem;
@@ -339,29 +512,29 @@ html a {
   }
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-1 {
-  background-image: url("../img/FordFiesta.webp");
+  background-image: url("../img/PEUGEOT 308 - 9700.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -o-object-fit: cover;
   object-fit: cover;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-2 {
-  background-image: url("../img/RenaultClio.webp");
+  background-image: url("../img/VW Golf - 12700.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-3 {
-  background-image: url("../img/RenaultMegane.webp");
+  background-image: url("../img/VW Tiguan - 17400.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-4 {
-  background-image: url("../img/BMW2-SERIESACTIVETOURER.webp");
+  background-image: url("../img/BMW X5.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-5 {
-  background-image: url("../img/OpelZafira.webp");
+  background-image: url("../img/BMW Baureihe 3 Touring 320 d.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -391,7 +564,7 @@ html a {
   background-repeat: no-repeat;
 }
 .catalogOfPopularCarsFromEurope-Conteiner .card-11 {
-  background-image: url("../img/fordKuga.webp");
+  background-image: url("../img/BMW X3.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -497,6 +670,7 @@ html a {
 }
 .catalogOfPopularCarsFromEurope-Conteiner .cards__modelCar {
   text-align: left;
+  text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
@@ -517,6 +691,227 @@ html a {
 }
 @media (max-width: 600px) {
   .catalogOfPopularCarsFromEurope-Conteiner .cards__deliveryTerms {
+    font-size: 200%;
+  }
+}
+
+.catalogOfPopularCarsFromUSA {
+  text-align: center;
+  padding: 0rem 1rem 5rem 1rem;
+}
+.catalogOfPopularCarsFromUSA h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.catalogOfPopularCarsFromUSA h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromUSA h4 {
+    font-size: 250%;
+  }
+}
+.catalogOfPopularCarsFromUSA-Conteiner {
+  max-width: 120rem;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+  grid-auto-rows: minmax(32rem, auto);
+  grid-gap: 2rem 2rem;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromUSA-Conteiner {
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-template-rows: repeat(18, 280px);
+  }
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-1 {
+  background-image: url("../img/Chevrolet-Equinox-5800.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-2 {
+  background-image: url("../img/Chevrolet-Malibu-5800.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-3 {
+  background-image: url("../img/Ford-Escape-sel-2021-7500.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-4 {
+  background-image: url("../img/Honda-Accord-touring-2021-5800.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-5 {
+  background-image: url("../img/Volkswagen-Tiguan-7225.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-6 {
+  background-image: url("../img/GMC-TERRAIN-SLT-2021-8900.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-7 {
+  background-image: url("../img/MAZDA-CX-5-GRAND-TOURING-2021-12300.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-8 {
+  background-image: url("../img/AUDI-Q5-PREMIUM-PLUS-2021-19800_1.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-9 {
+  background-image: url("../img/VOLVO-XC90-T6-INSCRIPTION-2021.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-10 {
+  background-image: url("../img/FORD-MUSTANG-2021-12000.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-11 {
+  background-image: url("../img/MERCEDES-BENZ-GLE-350-4MATIC-24300.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-12 {
+  background-image: url("../img/HONDA-CR-V-EXL 14000.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-13 {
+  background-image: url("../img/BMW-X1-XDRIVE28I-14000.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-14 {
+  background-image: url("../img/FORD EXPLORER XLT.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-15 {
+  background-image: url("../img/BMW X3 XDRIVEM40I 23 500.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-16 {
+  background-image: url("../img/LAND ROVER RANGE ROVER VELAR S.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-17 {
+  background-image: url("../img/TOYOTA VENZA LE.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .card-18 {
+  background-image: url("../img/TESLA MODEL Y.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .cards {
+  margin: 0 1rem 0 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromUSA-Conteiner .cards {
+    margin: 0;
+  }
+}
+.catalogOfPopularCarsFromUSA-Conteiner .cards__price {
+  width: auto;
+  height: 25px;
+  background-color: black;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .cards__price_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: rgb(33, 33, 33);
+  color: white;
+  margin-right: 1rem;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromUSA-Conteiner .cards__price_text {
+    font-size: 200%;
+  }
+}
+.catalogOfPopularCarsFromUSA-Conteiner .cards__price_euro {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: rgb(33, 33, 33);
+  color: #399297;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromUSA-Conteiner .cards__price_euro {
+    font-size: 200%;
+  }
+}
+.catalogOfPopularCarsFromUSA-Conteiner .cards__carParameters {
+  padding: 1rem;
+  width: auto;
+  background-color: black;
+  opacity: 0.5;
+}
+.catalogOfPopularCarsFromUSA-Conteiner .cards__yearCar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: rgb(33, 33, 33);
+  color: white;
+  text-align: left;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromUSA-Conteiner .cards__yearCar {
+    font-size: 200%;
+  }
+}
+.catalogOfPopularCarsFromUSA-Conteiner .cards__modelCar {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromUSA-Conteiner .cards__modelCar {
+    font-size: 200%;
+  }
+}
+.catalogOfPopularCarsFromUSA-Conteiner .cards__deliveryTerms {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: rgb(51, 51, 51);
+  color: white;
+}
+@media (max-width: 600px) {
+  .catalogOfPopularCarsFromUSA-Conteiner .cards__deliveryTerms {
     font-size: 200%;
   }
 }
@@ -851,4 +1246,59 @@ html a {
 }
 .developmentAndSupport a {
   color: blue;
+}
+
+.faq {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 2rem 0 1rem;
+}
+.faq ul {
+  list-style-type: none;
+}
+.faq ul li {
+  margin-bottom: 1rem;
+}
+.faq-mainText {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+.faq-content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  display: none;
+  list-style-type: none;
+}
+@media (max-width: 600px) {
+  .faq-content {
+    font-size: 250%;
+  }
+}
+.faq-expandable {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.faq-expandable::before {
+  content: " +";
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .faq-expandable::before {
+    font-size: 16px;
+  }
+}
+.faq-expandable.active::before {
+  content: " -";
+}
+@media (max-width: 600px) {
+  .faq-expandable.active::before {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */

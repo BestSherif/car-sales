@@ -1,131 +1,220 @@
 <!DOCTYPE html>
-<!-- Подключаем bootstrap -->
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-  crossorigin="anonymous"
-/>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Подключаем шрифты -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style.min.css" />
-
-    <title>Автомобили под заказ из Европы и США</title>
-
-    <meta
-      name="description"
-      content="Подберем автомобиль мечты на аукционах Европы и Америки с минимальным пробегом, выкупим по низкой цене, доставим в кратчайшие сроки, растоможим"
+    <link
+      rel="icon"
+      type="image/ico"
+      sizes="144x144"
+      href="https://www.car-sale.by/icons/favIcons/favicon.ico"
     />
-    0
-    <meta
-      name="keywords"
-      content="пригнать авто из Европы заказать автомобиль техника под заказ заказать машину из Америки США автомобили с аукционов с минимальным пробегом"
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="120x120"
+      href="https://www.car-sale.by/icons/favIcons/apple-icon-120x120.png"
     />
-
-    <meta property="og:title" content="Автомобили под заказ из Европы и США" />
-    <meta
-      property="og:description"
-      content="ПОДБОР, ПОКУПКА, ДОСТАВКА, ТАМОЖНЯ, АВТОМОБИЛИ ИЗ ЕВРОПЫ и АМЕРИКИ"
+    <link
+      rel="icon"
+      href="https://www.car-sale.by/icons/favIcons/favicon.ico"
+      type="image/x-icon"
     />
-    <meta property="og:image" content="icons/car-salesInRussion.webp" />
-    <meta property="og:url" content="www.car-sales.by" />
-
     <link
       rel="apple-touch-icon"
       sizes="57x57"
-      href="icons/favIcons/apple-icon-57x57.png"
+      href="https://www.car-sale.by/icons/favIcons/apple-icon-57x57.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="icons/favIcons/apple-icon-60x60.png"
+      href="https://www.car-sale.by/icons/favIcons/apple-icon-60x60.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="icons/favIcons/apple-icon-72x72.png"
+      href="https://www.car-sale.by/icons/favIcons/apple-icon-72x72.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="icons/favIcons/apple-icon-76x76.png"
+      href="https://www.car-sale.by/icons/favIcons/apple-icon-76x76.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="icons/favIcons/apple-icon-114x114.png"
+      href="https://www.car-sale.by/icons/favIcons/apple-icon-114x114.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="icons/favIcons/apple-icon-120x120.png"
+      href="https://www.car-sale.by/icons/favIcons/apple-icon-120x120.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="icons/favIcons/apple-icon-144x144.png"
+      href="https://www.car-sale.by/icons/favIcons/apple-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="icons/favIcons/apple-icon-152x152.png"
+      href="https://www.car-sale.by/icons/favIcons/apple-icon-152x152.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="icons/favIcons/apple-icon-180x180.png"
+      href="https://www.car-sale.by/icons/favIcons/apple-icon-180x180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="icons/favIcons/android-icon-192x192.png"
+      href="https://www.car-sale.by/icons/favIcons/android-icon-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="icons/favIcons/favicon-32x32.png"
+      href="https://www.car-sale.by/icons/favIcons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="icons/favIcons/favicon-96x96.png"
+      href="https://www.car-sale.by/icons/favIcons/favicon-96x96.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="icons/favIcons/favicon-16x16.png"
+      href="https://www.car-sale.by/icons/favIcons/favicon-16x16.png"
     />
-    <link rel="manifest" href="icons/favIcons/manifest.json" />
+    <link
+      rel="manifest"
+      href="https://www.car-sale.by/icons/favIcons/manifest.json"
+    />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta
       name="msapplication-TileImage"
-      content="icons/favIcons/ms-icon-144x144.png"
+      content="https://www.car-sale.by/icons/favIcons/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
+    <!-- Указываем поисковику, что данная ссылка является канонической -->
+    <link rel="canonical" href="https://www.car-sale.by/" />
+    <!-- Заголовок в поисковой выдаче  Yandex и Google-->
+    <title itemprop="name">Автомобили под ключ из Европы и Америки</title>
+    <!--Микро-разметка Описание сайта в поисковой выдаче Yandex и Google -->
+    <div itemscope itemtype="http://schema.org/AutoDealer">
+      <meta itemprop="name" content="Car-Sale.by" />
+      <meta itemprop="url" content="https://www.car-sale.by/" />
+      <meta name="robots" content="index, follow" />
+      <meta
+        itemprop="description"
+        content="Подберем автомобиль мечты на аукционах Европы и Америки с минимальным пробегом, выкупим по низкой цене, доставим в кратчайшие сроки, растоможим. Работаем под ключ."
+      />
+    </div>
+    <meta
+      name="description"
+      content="Подберем автомобиль мечты на аукционах Европы и Америки с минимальным пробегом, выкупим по низкой цене, доставим в кратчайшие сроки, растоможим"
+    />
+    <meta
+      name="keywords"
+      content="пригнать авто из Европы заказать автомобиль техника под заказ заказать машину из Америки США автомобили с аукционов с минимальным пробегом carsale car-sale .by megapolis westmotors"
+    />
+    <!-- Настройка отображения сайта когда им делятся в соц.сетях -->
+    <meta property="og:title" content="Автомобили под заказ из Европы и США" />
+    <meta
+      property="og:description"
+      content="ПОДБОР, ПОКУПКА, ДОСТАВКА, ТАМОЖНЯ, АВТОМОБИЛИ ИЗ ЕВРОПЫ И АМЕРИКИ"
+    />
+    <meta
+      property="og:image"
+      content="https://www.car-sale.by/icons/car-saleInRussion.jpg"
+    />
+    <meta property="og:url" content="https://www.car-sale.by/" />
+    <!-- Yandex.Metrika counter -->
+    <script>
+      setTimeout(function () {
+        (function (m, e, t, r, i, k, a) {
+          m[i] =
+            m[i] ||
+            function () {
+              (m[i].a = m[i].a || []).push(arguments);
+            };
+          m[i].l = 1 * new Date();
+          for (let j = 0; j < document.scripts.length; j++) {
+            if (document.scripts[j].src === r) {
+              return;
+            }
+          }
+          (k = e.createElement(t)),
+            (a = e.getElementsByTagName(t)[0]),
+            (k.async = 1),
+            (k.src = r),
+            a.parentNode.insertBefore(k, a);
+        })(
+          window,
+          document,
+          "script",
+          "https://mc.yandex.ru/metrika/tag.js",
+          "ym"
+        );
+
+        ym(96165996, "init", {
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true,
+          webvisor: true,
+        });
+      }, 3000); // Задержка в 3000 миллисекунд, или 3 секунды
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/96165996"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
+    </noscript>
+
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google tag (gtag.js) -->
+    <script>
+      setTimeout(function () {
+        var script = document.createElement("script");
+        script.src =
+          "https://www.googletagmanager.com/gtag/js?id=AW-11480673901";
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "AW-11480673901");
+      }, 3000); // Задержка в 3000 миллисекунд, или 3 секунды
+    </script>
+    <!-- JIVO -->
+    <script>
+      setTimeout(function () {
+        var script = document.createElement("script");
+        script.src = "https://code.jivo.ru/widget/l8aObyxuu6";
+        document.head.appendChild(script);
+      }, 3000); // Задержка в 3000 миллисекунд, или 3 секунды
+    </script>
   </head>
   <body>
     <!-- шапка -->
     <header>
       <div id="main" class="сontactInformation">
         <div class="сontactInformation-logo сontactInformationCard">
-          <img src="icons/car-salesInRussion.webp" alt="Company`s logo" />
+          <a href="https://www.car-sale.by/"
+            ><img src="icons/car-saleInRussion.webp" alt="Company`s logo"
+          /></a>
         </div>
         <div class="сontactInformation-phoneNumbers сontactInformationCard">
           <div class="сontactInformation_img">
@@ -141,16 +230,14 @@
             <img src="icons/opened.webp" alt="telephone" />
           </div>
           <div class="сontactInformation_text">ВРЕМЯ РАБОТЫ</div>
-          <div class="сontactInformation_information">Пн-ВС: 9.00-21.00</div>
+          <div class="сontactInformation_information">Пн-ВС: 9.00-22.00</div>
         </div>
         <div class="сontactInformation-email сontactInformationCard">
           <div class="сontactInformation_img">
-            <img src="icons/email.webp" alt="telephone" />
+            <img src="icons/email.webp" loading="lazy" alt="email" />
           </div>
           <div class="сontactInformation_text">EMAIL</div>
-          <div class="сontactInformation_information">
-            CarSalesBelarus@gmail.com
-          </div>
+          <div class="сontactInformation_information">order@car-sale.by</div>
         </div>
 
         <div class="сontactInformation-telegramLink сontactInformationCard">
@@ -159,6 +246,7 @@
               href="https://t.me/CarSalesby"
               title="Открыть в Telegram"
               target="_blank"
+              rel="noopener noreferrer"
               ><img src="icons/telegram.png" alt="telegram"
             /></a>
           </div>
@@ -170,7 +258,7 @@
       <div class="navigationMenu">
         <ul>
           <li class="navigationMenu__element">
-            <a href="#main">ГЛАВНАЯ</a>
+            <a href="cars-from-USA.html">АВТОМОБИЛИ ИЗ США</a>
           </li>
           <li class="navigationMenu__element">
             <a href="#auto_catalog">КАТАЛОГ АВТО</a>
@@ -181,7 +269,7 @@
           <li class="navigationMenu__element">
             <a href="#advantage">ПРЕИМУЩЕСТВА</a>
           </li>
-          <li class="navigationMenu__element_fourth">
+          <li class="navigationMenu__element">
             <a href="#costOfServices">СТОИМОСТЬ</a>
           </li>
           <li class="navigationMenu__element">
@@ -190,6 +278,21 @@
         </ul>
       </div>
     </nav>
+    <div class="container" id="container" onclick="myFunction(this)">
+      <div class="burger"></div>
+      <div class="burger"></div>
+      <div class="burger"></div>
+    </div>
+
+    <div id="myDropdown" class="dropdown-content">
+      <a href="cars-from-USA.html">АВТОМОБИЛИ ИЗ США</a>
+      <a href="#auto_catalog">КАТАЛОГ АВТО</a>
+      <a href="#scheme_of_work">КАК ЗАКАЗАТЬ</a>
+      <a href="#advantage">ПРЕИМУЩЕСТВА</a>
+      <a href="#costOfServices">СТОИМОСТЬ</a>
+      <a href="#application">ОСТАВИТЬ ЗАЯВКУ</a>
+    </div>
+
     <main>
       <section class="carsFromEurope">
         <div class="center">
@@ -201,7 +304,7 @@
             <hr class="carsFromEurope__services_hr" />
 
             <p class="carsFromEurope__carsFromEurope">
-              АВТОМОБИЛИ ИЗ ЕВРОПЫ и АМЕРИКИ
+              АВТОМОБИЛИ ИЗ ЕВРОПЫ И АМЕРИКИ
             </p>
             <p class="carsFromEurope__сonditions">
               <img src="icons/iconDelivery.png" alt="delivery" /> Доставка от 2
@@ -216,13 +319,35 @@
         </div>
       </section>
       <section class="turnkeyDelivery">
-        <div class="turnkeyDelivery-imgBlock">
-          <img
-            src="img/BMWSection2.webp"
-            class="turnkeyDelivery-imgBlock_img"
-            alt="bmwToOrder"
-          />
+        <div
+          class="turnkeyDelivery-imgBlock"
+          itemscope
+          itemtype="http://schema.org/ImageObject"
+        >
+          <a
+            href="https://t.me/CarSalesby"
+            title="Открыть в Telegram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://www.car-sale.by/img/car-From-Europe.webp"
+              class="turnkeyDelivery-imgBlock_img"
+              alt="Пригнать автомобиль из Европы под ключ с расстоможкой"
+              loading="lazy"
+              width="735"
+              height="489"
+              itemprop="contentUrl"
+            />
+            <meta itemprop="width" content="735" />
+            <meta itemprop="height" content="489" />
+            <meta
+              itemprop="description"
+              content="Пригнать автомобиль из Европы под ключ с расстоможкой"
+            />
+          </a>
         </div>
+
         <div class="turnkeyDelivery-description">
           <div class="turnkeyDelivery-description__text1">
             ДОСТАВКА ПОД КЛЮЧ
@@ -231,10 +356,10 @@
             <h2>АВТО ИЗ ЕВРОПЫ ПОД КЛЮЧ</h2>
           </div>
           <div class="turnkeyDelivery-description__experience">
-            Наша организация обладает значительным опытом в области
-            транспортировки автомобилей из европейских стран (Германия, Франция,
-            Бельгия, Италия и др.) в Беларусь. Приобретение авто в Европе
-            предлагает целый ряд неоспоримых преимуществ:
+            Наша компания имеет обширный опыт в сфере перевозки автомобилей из
+            стран Европы (включая Германию, Францию, Бельгию, Италию и другие) в
+            Беларусь. Покупка автомобиля в Европе предоставляет ряд неоспоримых
+            преимуществ:
           </div>
           <div class="turnkeyDelivery-description__card">
             <div class="turnkeyDelivery-description__card-img">
@@ -246,14 +371,15 @@
             </div>
             <div class="turnkeyDelivery-description__card-text">
               <div class="turnkeyDelivery-description__card-text_bigText">
-                ВЫГОДНЫЕ ЦЕНЫ
+                ЦЕНОВАЯ ВЫГОДА:
               </div>
               <div class="turnkeyDelivery-description__card-text_smallText">
-                Финальная стоимость автомобилей с европейских автоаукционов с
-                учетом доставки и таможенного оформления имеет выгоду до 15-30%
-                от стоимости аналогичных авто на местном рынке. Индивидуальный
-                подход. Выигрываем автомобиль, согласно Ваших требований, по
-                минимальной цене рынка.
+                Итоговая стоимость автомобилей с европейских автоаукционов,
+                учитывая доставку и таможенное оформление, может быть на 15-30%
+                ниже стоимости схожих автомобилей на местном рынке. Мы подходим
+                к каждому клиенту индивидуально и стараемся выиграть автомобиль,
+                который соответствует всем его требованиям, по минимальной
+                рыночной цене.
               </div>
             </div>
           </div>
@@ -267,14 +393,14 @@
             </div>
             <div class="turnkeyDelivery-description__card-text">
               <div class="turnkeyDelivery-description__card-text_bigText">
-                ОГРОМНЫЙ ВЫБОР
+                ШИРОКИЙ ВЫБОР:
               </div>
               <div class="turnkeyDelivery-description__card-text_smallText">
-                На аукционах Европы представлено огромное количество автомобилей
-                различных марок и моделей. Присутсвует экспертная техническая
-                оценка состояния автомобиля, в которой указаны мельчайшие
-                повреждения, если они присутсвуют. Наша компания может
-                приобретать авто на всех крупных европейских аукционах.
+                Европейские аукционы предлагают огромное количество автомобилей
+                разных марок и моделей. Каждый автомобиль проходит тщательную
+                техническую оценку, в которой отмечаются даже самые маленькие
+                повреждения, если они есть. Наша компания имеет возможность
+                приобретать автомобили на всех крупных европейских аукционах.
               </div>
             </div>
           </div>
@@ -288,14 +414,15 @@
             </div>
             <div class="turnkeyDelivery-description__card-text">
               <div class="turnkeyDelivery-description__card-text_bigText">
-                ХОРОШЕЕ ТЕХНИЧЕСКОЕ СОСТОЯНИЕ
+                ОТЛИЧНОЕ ТЕХНИЧЕСКОЕ СОСТОЯНИЕ:
               </div>
               <div class="turnkeyDelivery-description__card-text_smallText">
-                В абсолютном большинстве из Европы доставляются целые
-                неаварийные автомобили без повреждений, которые
-                эксплуатировались на хороших дорогах без соли. Прозрачная
-                история обслуживания, подтвержденный пробег. ТО производится
-                своевременно оригинальными запчастями.
+                Большинство автомобилей, доставляемых из Европы, не имеют
+                повреждений и не участвовали в авариях. Они эксплуатировались на
+                качественных дорогах без использования соли. У каждого
+                автомобиля есть прозрачная история обслуживания и подтвержденный
+                пробег. Техническое обслуживание проводится вовремя с
+                использованием оригинальных запчастей.
               </div>
             </div>
           </div>
@@ -308,55 +435,55 @@
           <div class="cards card-1">
             <div class="cards__price">
               <div class="cards__price_text">ОТ</div>
-              <div class="cards__price_euro">&euro; 8 000</div>
+              <div class="cards__price_euro">&euro; 9 700</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
-              <div class="cards__modelCar">FORD FIESTA</div>
+              <div class="cards__yearCar">2020-2021</div>
+              <div class="cards__modelCar">PEUGEOT 308</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
           </div>
           <div class="cards card-2">
             <div class="cards__price">
               <div class="cards__price_text">ОТ</div>
-              <div class="cards__price_euro">&euro; 9 000</div>
+              <div class="cards__price_euro">&euro; 12 700</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
-              <div class="cards__modelCar">RENAULT CLIO</div>
+              <div class="cards__yearCar">2020-2021</div>
+              <div class="cards__modelCar">VW Golf</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
           </div>
           <div class="cards card-3">
             <div class="cards__price">
               <div class="cards__price_text">ОТ</div>
-              <div class="cards__price_euro">&euro; 11 000</div>
+              <div class="cards__price_euro">&euro; 17 400</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
-              <div class="cards__modelCar">RENAULT MEGAN</div>
+              <div class="cards__yearCar">2020-2021</div>
+              <div class="cards__modelCar">VW Tiguan</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
           </div>
           <div class="cards card-4">
             <div class="cards__price">
               <div class="cards__price_text">ОТ</div>
-              <div class="cards__price_euro">&euro; 12 000</div>
+              <div class="cards__price_euro">&euro; 37 000</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
-              <div class="cards__modelCar">BMW 2-SERIES ACTIVE TOURER</div>
+              <div class="cards__yearCar">2020-2021</div>
+              <div class="cards__modelCar">BMW X5</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
           </div>
           <div class="cards card-5">
             <div class="cards__price">
               <div class="cards__price_text">ОТ</div>
-              <div class="cards__price_euro">&euro; 12 000</div>
+              <div class="cards__price_euro">&euro; 18 000</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
-              <div class="cards__modelCar">OPEL ZAFIRA</div>
+              <div class="cards__yearCar">2020-2021</div>
+              <div class="cards__modelCar">BMW Baureihe 3 Touring 320d</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
           </div>
@@ -366,7 +493,7 @@
               <div class="cards__price_euro">&euro; 12 000</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2016-2018</div>
+              <div class="cards__yearCar">2020-2021</div>
               <div class="cards__modelCar">OPEL INSIGNIA</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
@@ -377,7 +504,7 @@
               <div class="cards__price_euro">&euro; 12 000</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2016-2018</div>
+              <div class="cards__yearCar">2020-2021</div>
               <div class="cards__modelCar">FORD MONDEO</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
@@ -388,7 +515,7 @@
               <div class="cards__price_euro">&euro; 13 000</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2016-2018</div>
+              <div class="cards__yearCar">2020-2021</div>
               <div class="cards__modelCar">RENAULT TALISMAN</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
@@ -399,7 +526,7 @@
               <div class="cards__price_euro">&euro; 13 000</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
+              <div class="cards__yearCar">2020-2021</div>
               <div class="cards__modelCar">VOLKSWAGEN PASSAT</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
@@ -410,7 +537,7 @@
               <div class="cards__price_euro">&euro; 13 000</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
+              <div class="cards__yearCar">2020-2021</div>
               <div class="cards__modelCar">CITROEN C4 GRAND PICASSO</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
@@ -418,11 +545,11 @@
           <div class="cards card-11">
             <div class="cards__price">
               <div class="cards__price_text">ОТ</div>
-              <div class="cards__price_euro">&euro; 12 500</div>
+              <div class="cards__price_euro">&euro; 22 500</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
-              <div class="cards__modelCar">FORD KUGA</div>
+              <div class="cards__yearCar">2020-2021</div>
+              <div class="cards__modelCar">BMW X3</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
           </div>
@@ -432,7 +559,7 @@
               <div class="cards__price_euro">&euro; 12 500</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
+              <div class="cards__yearCar">2020-2021</div>
               <div class="cards__modelCar">NISSAN QASHQAI</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
@@ -443,7 +570,7 @@
               <div class="cards__price_euro">&euro; 13 000</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
+              <div class="cards__yearCar">2020-2021</div>
               <div class="cards__modelCar">RENAULT GRAND SCENIC</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
@@ -454,7 +581,7 @@
               <div class="cards__price_euro">&euro; 14 000</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
+              <div class="cards__yearCar">2020-2021</div>
               <div class="cards__modelCar">PEUGEOT 3008</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
@@ -465,7 +592,7 @@
               <div class="cards__price_euro">&euro; 14 000</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
+              <div class="cards__yearCar">2020-2021</div>
               <div class="cards__modelCar">VOLKSWAGEN TOURAN</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
@@ -476,7 +603,7 @@
               <div class="cards__price_euro">&euro; 15 500</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
+              <div class="cards__yearCar">2020-2021</div>
               <div class="cards__modelCar">AUDI A4</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
@@ -487,7 +614,7 @@
               <div class="cards__price_euro">&euro; 17 000</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2017-2018</div>
+              <div class="cards__yearCar">2020-2021</div>
               <div class="cards__modelCar">MERCEDES-BENZ C-CLASS</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
@@ -498,7 +625,7 @@
               <div class="cards__price_euro">&euro; 28 000</div>
             </div>
             <div class="cards__carParameters">
-              <div class="cards__yearCar">2016-2017</div>
+              <div class="cards__yearCar">2020-2021</div>
               <div class="cards__modelCar">VOLVO XC90</div>
               <div class="cards__deliveryTerms">ПОД КЛЮЧ В БЕЛАРУСИ</div>
             </div>
@@ -507,10 +634,14 @@
       </section>
       <section class="question">
         <div class="question__text">
-          <div class="question__text_big">Не нашли интересующую модель?</div>
+          <div class="question__text_big">НЕ НАШЛИ ИНТЕРЕСУЮЩУЮ МОДЕЛЬ?</div>
           <div class="question__text_small">
-            Напишите нам в Telegram и наши специалисты найдут и подберут
-            оптимальные варианты специально под Ваши требования
+            <span
+              >БЕСПЛАТНО, С УДОВОЛЬСТВИЕМ ПРЕДЛОЖИМ ВАМ НЕСКОЛЬКО ВАРИАНТОВ
+              АВТОМОБИЛЕЙ В ВАШЕМ БЮДЖЕТЕ. ВЫ НИЧЕГО НЕ ТЕРЯЕТЕ, НАПИШИТЕ
+              НАМ!</span
+            >
+            <br /><br />
           </div>
         </div>
         <div class="question__link">
@@ -534,20 +665,22 @@
           <div class="schemeOfWork-block__description">
             <div class="schemeOfWork-block__description_img">
               <img
-                src="img/SELECTION OF OPTIONS AUTO.webp"
+                src="img/SELECTION-OF-OPTIONS-AUTO.webp"
                 alt="SELECTION OF OPTIONS AUTO"
               />
             </div>
             <div class="schemeOfWork-block__description_text">
-              <span>ПОДБОР ВАРИАНТОВ</span>
+              <span>ПОДБОР ВАРИАНТОВ - БЕСПЛАТНО</span>
               <ul>
                 <li>
-                  Подбираем варианты авто согласно Ваших пожеланий, делаем
-                  предварительный расчет под ключ
+                  Мы отбираем варианты автомобилей, которые соответствуют вашим
+                  предпочтениям, и предоставляем заранее рассчитанную стоимость,
+                  включающую все услуги
                 </li>
                 <li>
-                  Присылаем Вам варианты любым удобным способом либо вместе
-                  рассматриваем у нас в офисе
+                  Присылаем Вам варианты любым удобным способом: viber,
+                  telegram, watsapp, e-mail. Либо вместе рассматриваем у нас в
+                  офисе
                 </li>
               </ul>
             </div>
@@ -558,17 +691,19 @@
           <div class="schemeOfWork-block__description">
             <div class="schemeOfWork-block__description_img">
               <img
-                src="img/CONCLUSION OF THE AGREEMENT.webp"
+                src="img/CONCLUSION-OF-THE-AGREEMENT.webp"
+                loading="lazy"
                 alt="CONCLUSION OF THE AGREEMENT"
               />
             </div>
             <div class="schemeOfWork-block__description_text">
-              <span>ЗАКЛЮЧЕНИЕ ДОГОВОРА</span>
+              <span>ОФОРМЛЕНИЕ СОГЛАШЕНИЯ</span>
               <ul>
-                <li>Заключаем договор на оказание услуг</li>
+                <li>Подписываем соглашение на предоставление услуг</li>
                 <li>
-                  Производите оплату по договору через банк либо ЕРИП /
-                  Интернет-банкинг
+                  Вы осуществляете платеж в соответствии с условиями соглашения
+                  через банковскую систему или с использованием ЕРИП /
+                  Интернет-банкинга.
                 </li>
               </ul>
             </div>
@@ -578,15 +713,19 @@
           <div class="schemeOfWork-block_stages">Этап 3</div>
           <div class="schemeOfWork-block__description">
             <div class="schemeOfWork-block__description_img">
-              <img src="img/BIDDING AT AUCTION.webp" alt="BIDDING AT AUCTION" />
+              <img
+                src="img/BIDDING-AT-AUCTION.webp"
+                loading="lazy"
+                alt="BIDDING AT AUCTION"
+              />
             </div>
             <div class="schemeOfWork-block__description_text">
               <span>ТОРГИ НА АУКЦИОНЕ</span>
               <ul>
                 <li>
-                  Мы участвуем в аукционе за выбранную технику, предварительно
-                  согласовав с Вами максимальную ставку и рассчитав итоговую
-                  стоимость
+                  Мы участвуем в аукционе за выбранный автомобиль, иную технику,
+                  предварительно согласовав с Вами максимальную ставку и
+                  рассчитав итоговую стоимость
                 </li>
               </ul>
             </div>
@@ -597,20 +736,22 @@
           <div class="schemeOfWork-block__description">
             <div class="schemeOfWork-block__description_img">
               <img
-                src="img/PURCHASE AND PAYMENT.webp"
+                src="img/PURCHASE-AND-PAYMENT.webp"
+                loading="lazy"
                 alt="PURCHASE AND PAYMENT"
               />
             </div>
             <div class="schemeOfWork-block__description_text">
-              <span>ПОКУПКА И ОПЛАТА</span>
+              <span>ПРИОБРЕТЕНИЕ И РАСЧЕТ</span>
               <ul>
                 <li>
-                  В случае выигрыша на аукционе мы подготавливаем необходимые
-                  документы, предоставляем подтверждающие выписки
+                  После того как мы выигрываем на аукционе, мы готовим все
+                  необходимые документы и предоставляем подтверждающие выписки.
                 </li>
                 <li>
-                  Далее выставляем официальный счет, по которому Вы должны
-                  произвести оплату за авто+доставку в любом отделении банка.
+                  Затем мы выдаем официальный счет для оплаты стоимости
+                  автомобиля и доставки, который вы можете оплатить в любом
+                  банковском отделении.
                 </li>
               </ul>
             </div>
@@ -620,15 +761,20 @@
           <div class="schemeOfWork-block_stages">Этап 5</div>
           <div class="schemeOfWork-block__description">
             <div class="schemeOfWork-block__description_img">
-              <img src="img/DELIVERY PROCEDURE.webp" alt="DELIVERY PROCEDURE" />
+              <img
+                src="img/DELIVERY-PROCEDURE.webp"
+                loading="lazy"
+                alt="DELIVERY PROCEDURE"
+              />
             </div>
             <div class="schemeOfWork-block__description_text">
-              <span>ПРОЦЕДУРА ДОСТАВКИ</span>
+              <span>ПРОЦЕСС ПЕРЕВОЗКИ</span>
               <ul>
                 <li>
-                  После оплаты авто мы организовываем транспортировку в РБ,
-                  подготавливаем всю необходимую транспортную, таможенную и
-                  экспортную документацию
+                  После того как оплата за автомобиль произведена, мы занимаемся
+                  организацией его доставки в Республику Беларусь, а также
+                  подготовкой всей требуемой транспортной, таможенной и
+                  экспортной документации.
                 </li>
               </ul>
             </div>
@@ -638,18 +784,23 @@
           <div class="schemeOfWork-block_stages">Этап 6</div>
           <div class="schemeOfWork-block__description">
             <div class="schemeOfWork-block__description_img">
-              <img src="img/custom clearence.webp" alt="custom clearence" />
+              <img
+                src="img/custom-clearence.webp"
+                loading="lazy"
+                alt="custom clearence"
+              />
             </div>
             <div class="schemeOfWork-block__description_text">
-              <span>ТАМОЖЕННОЕ ОФОРМЛЕНИЕ</span>
+              <span>ОФОРМЛЕНИЕ НА ТАМОЖНЕ</span>
               <ul>
                 <li>
-                  Автомобиль прибывает на таможню в г. Минск, мы заранее
-                  сообщаем Вам о времени, помогаем с документами;
+                  Когда автомобиль достигает таможни в Минске, мы
+                  заблаговременно уведомляем вас о времени прибытия и помогаем с
+                  оформлением документов;
                 </li>
                 <li>
-                  Вы производите оплату таможенных пошлин, после чего можете
-                  забирать приобретенный автомобиль
+                  Вы оплачиваете таможенные сборы, после чего можете забрать
+                  свой новый автомобиль.
                 </li>
               </ul>
             </div>
@@ -658,50 +809,67 @@
       </section>
       <section id="advantage" class="advantage">
         <div class="advantage__headers">
-          <div class="advantage__headers_mainText">ПРЕИМУЩЕСТВА</div>
+          <div class="advantage__headers_mainText">БОНУСЫ</div>
           <div class="advantage__headers_secondText">
-            <h6>Почему стоит работать именно с нами?</h6>
+            <h6>Почему выбор в нашу пользу будет правильным?</h6>
           </div>
         </div>
         <div class="advantage_centeringBox">
           <div class="advantage__box">
             <div class="advantage__box_img">
-              <img src="icons/auction.png" alt="car auction" />
+              <img src="icons/auction.png" loading="lazy" alt="car auction" />
             </div>
             <div class="advantage__box_text">
               <span>ВСЕ АУКЦИОНЫ</span>
-              <p>Доступ ко всем аукционным площадкам Европы и США</p>
+              <p>Мы предоставляем доступ к аукционам по всей Европе и США.</p>
             </div>
           </div>
 
           <div class="advantage__box">
             <div class="advantage__box_img">
-              <img src="icons/licensing.png" alt="licensing" />
+              <img src="icons/licensing.png" loading="lazy" alt="licensing" />
             </div>
             <div class="advantage__box_text">
-              <span>ОФИЦИАЛЬНО</span>
-              <p>Все оплаты по договору только через банк</p>
+              <span>ЗАКОННО</span>
+              <p>
+                Все транзакции осуществляются по договору и проходят
+                исключительно через банковские каналы.
+              </p>
             </div>
           </div>
         </div>
         <div class="advantage_centeringBox">
           <div class="advantage__box">
             <div class="advantage__box_img">
-              <img src="icons/intermediary.png" alt="intermediary" />
+              <img
+                src="icons/intermediary.png"
+                loading="lazy"
+                alt="intermediary"
+              />
             </div>
             <div class="advantage__box_text">
-              <span>БЕЗ ПОСРЕДНИКОВ</span>
-              <p>Работаем без посредников, что сокращает финальные затраты</p>
+              <span>ПРЯМОЕ СОТРУДНИЧЕСТВО</span>
+              <p>
+                Мы осуществляем прямое сотрудничество, что позволяет уменьшить
+                окончательные расходы.
+              </p>
             </div>
           </div>
 
           <div class="advantage__box">
             <div class="advantage__box_img">
-              <img src="icons/piggy-bank.png" alt="piggy-bank" />
+              <img src="icons/piggy-bank.png" loading="lazy" alt="piggy-bank" />
             </div>
             <div class="advantage__box_text">
-              <span>ЦЕНЫ</span>
-              <p>Мы даем минимальные цены на доставку в РБ и РФ</p>
+              <span>СТОИМОСТЬ</span>
+              <p>
+                Цена, способствующая преодолению кризиса, на наши услуги. <br />
+                C нами более экономно.
+              </p>
+              <p>
+                Мы предлагаем самые низкие тарифы на доставку в Республику
+                Беларусь и Российскую Федерацию.
+              </p>
             </div>
           </div>
         </div>
@@ -721,32 +889,30 @@
               <p>Стандартный пакет</p>
               <hr />
               <div class="costOfServices__box_price">
-                700
+                500
                 <p>руб</p>
               </div>
               <hr />
               <p>Подбор вариантов</p>
               <hr />
-              <p>Предварительный детальный расчет цены</p>
+              <p>Предварительный подробный расчет стоимости</p>
               <hr />
-              <p>Безлимит ставок / участий в аукционах</p>
+              <p>Неограниченное количество ставок / участия в аукционах</p>
               <hr />
-              <p>Организация доставки под "ключ"</p>
+              <p>Организация доставки “под ключ”</p>
               <hr />
               <p>Полное информационное сопровождение</p>
               <hr />
-              <p>Консультирование по таможне</p>
-              <br />
+              <p>Консультации по таможенным вопросам</p>
               <br />
               <button
                 class="question__link_button"
-                onclick="window.open('https://t.me/CarSalesby', '_blank')"
+                onclick="window.open('https://www.car-sale.by/cars-from-USA.html', '_blank')"
               >
                 ОСТАВИТЬ ЗАЯВКУ
               </button>
             </div>
           </div>
-
           <div class="costOfServices__box">
             <div class="costOfServices__box_text">
               <span>ПРЕМИУМ</span>
@@ -754,7 +920,7 @@
               <p>Премиальный пакет</p>
               <hr />
               <div class="costOfServices__box_price">
-                900
+                800
                 <p>руб</p>
               </div>
               <hr />
@@ -764,13 +930,14 @@
               <hr />
               <p>Безлимит ставок / участий в аукционах</p>
               <hr />
-              <p>Организация доставки под "ключ"</p>
+              <p>Организация доставки "под ключ"</p>
               <hr />
               <p>Полное информационное сопровождение</p>
               <hr />
-              <p>Доставка и сопровождение на таможне</p>
-              <br />
-              <br />
+              <p>
+                Сопровождение на таможне, а также проверка автомобиля на
+                соответствие экспертной технической оценке аукциона.
+              </p>
               <button
                 class="question__link_button"
                 onclick="window.open('https://t.me/CarSalesby', '_blank')"
@@ -781,9 +948,216 @@
           </div>
         </div>
       </section>
+      <section class="faq">
+        <div class="faq-mainText">
+          ЧАСТО ЗАДАВАЕМЫ ВОПРОСЫ ПРИ ПОКУПКЕ АВТОМОБИЛЯ ИЗ ЕВРОПЫ
+        </div>
+        <ul>
+          <li>
+            <div class="faq-expandable">
+              &nbsp;ПОЧЕМУ СЛЕДУЕТ ОТДАТЬ ПРЕДПОЧТЕНИЕ АВТОМОБИЛЯМ ИЗ ЕВРОПЫ?
+            </div>
+            <ul class="faq-content">
+              <li>
+                В Европе можно обнаружить экономные, дизельные универсалы с
+                отличной комплектацией. Автомобили с такими характеристиками -
+                настоящая находка на вторичном рынке Беларуси. Более того,
+                европейские автомобили обслуживались исключительно у
+                официального дилера и весь пробег машины - по чистым и ровным
+                европейским дорогам.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="faq-expandable">&nbsp;ПОЧЕМУ СТОИТ ВЫБРАТЬ НАС?</div>
+            <ul class="faq-content">
+              <li>
+                Мы уже более 5 лет занимаемся импортом автомобилей из Европы. За
+                это время наши эксперты подробно изучили все нюансы европейского
+                рынка и с легкостью смогут найти автомобиль вашей мечты по самой
+                выгодной цене. У нас есть проверенные партнеры в Европе, наши
+                сделки абсолютно безопасны, мы предоставляем консультации и
+                сопровождаем наших клиентов на всех этапах приобретения авто из
+                Европы.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="faq-expandable">
+              &nbsp;КАКИЕ АВТОМОБИЛИ ИЗ ЕВРОПЫ МОЖНО ЗАКАЗАТЬ?
+            </div>
+            <ul class="faq-content">
+              <li>
+                Выбор неограничен. Мы сотрудничаем со всеми европейскими
+                лизинговыми аукционами, а также с сертифицированными дилерами.
+                Мы будем рады помочь вам приобрести дизельный или бензиновый
+                кроссовер/универсал/седан/хэтчбек/минивен/кабриолет, как с
+                механической, так и с автоматической трансмиссией, как новый у
+                дилера, так и на аукционе. Кроме того, у нас есть опыт подбора
+                электромобилей и ретро автомобилей из Европы.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="faq-expandable">
+              &nbsp;КАК НАЧАТЬ ПАРТНЕРСТВО И ПРИСТУПИТЬ К ПОИСКУ ИДЕАЛЬНОГО АВТО
+            </div>
+            <ul class="faq-content">
+              <li>
+                Первоначальный этап: <br />
+                Сначала мы предложим Вам несколько вариантов автомобилей без
+                оплаты в мессенджере. Для этого отправьте нам сообщение, указав
+                свои предпочтения по марке, модели авто, типу кузова и топлива,
+                а также ожидаемому пробегу и комплектации. <br />
+                <br />
+                Следующий этап: <br />
+                Необходимо заключить договор и мы приступим к поиску автомобиля
+                Вашей мечты из Европы.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="faq-expandable">
+              &nbsp;КАК ПРОИСХОДИТ ВЫБОР И ПОКУПКА АВТОМОБИЛЯ?
+            </div>
+            <ul class="faq-content">
+              <li>
+                После подписания договора с Вами, Ваш специалист по подбору
+                свяжется с Вами и начнет поиск автомобилей, которые
+                соответствуют Вашим требованиям. Как только мы найдем подходящие
+                варианты, мы немедленно отправим их Вам, и если они Вас устроят,
+                специалист по подбору свяжется с Вами для обсуждения ставки на
+                автомобиль, который Вы выбрали, с окончательным расчетом
+                стоимости в Вашем городе. После того, как мы выиграем на
+                аукционе, Вам будет предоставлен полный отчет о сделке.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="faq-expandable">
+              &nbsp;ЕСТЬ ЛИ ВОЗМОЖНОСТЬ ПРОВЕРИТЬ АВТОМОБИЛЬ ДО ПОКУПКИ?
+            </div>
+            <ul class="faq-content">
+              <li>
+                Обычно, при покупке автомобиля с лизингового аукциона, такие
+                авто в большинстве случаев полностью исправны, так как они
+                обслуживались только у дилера, что является условием лизинга.
+                Если же речь идет о покупке авто у дилера, то такая возможность
+                существует. За дополнительную плату специалист проверит Ваш авто
+                на предмет перекраски, предоставит фото и видеоотчеты, а также
+                может проверить наиболее важный для Вас узел. Чтобы узнать
+                больше об этой услуге - свяжитесь с нами любым удобным для Вас
+                способом.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="faq-expandable">
+              &nbsp;Есть ли гарантии того, что автомобиль, который я выкупил в
+              Европе придет ко мне в исправном состоянии?
+            </div>
+            <ul class="faq-content">
+              <li>
+                Как было отмечено ранее, с вероятностью в 99% автомобили,
+                продаваемые на европейских лизинговых аукционах, находятся в
+                полной исправности, так как по условиям лизинга они должны
+                обслуживаться у официального дилера. При покупке нового авто в
+                Германии, дилер предоставляет гарантию на срок 1 год.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="faq-expandable">
+              &nbsp;КАК ПРОИЗВЕСТИ ОПЛАТУ ЗА АВТОМОБИЛЬ, ВЫИГРАННЫЙ НА АУКЦИОНЕ?
+            </div>
+            <ul class="faq-content">
+              <li>
+                В течение 24 часов после того, как вы выиграли на аукционе, вам
+                будет представлен счет для оплаты автомобиля. Валюта счета -
+                евро. Для осуществления оплаты вам потребуется паспорт, счет и
+                необходимая сумма в евро. Денежные средства переводятся напрямую
+                на счет аукциона.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="faq-expandable">
+              &nbsp;КАКОВ СРОК ДЕЙСТВИЯ ДОГОВОРА И СКОЛЬКО ВАРИАНТОВ ВЫ
+              ПРЕДОСТАВИТЕ?
+            </div>
+            <ul class="faq-content">
+              <li>
+                Договор не устанавливает ограничения на количество вариантов,
+                которые подходят Вам, мы будем продолжать поиск Вашего
+                автомобиля до тех пор, пока не приобретем его на аукционе или у
+                дилера.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="faq-expandable">
+              &nbsp;ВОЗМОЖНО ЛИ ОТКАЗАТЬСЯ ОТ АВТОМОБИЛЯ, ВЫИГРАННОГО НА
+              АУКЦИОНЕ?
+            </div>
+            <ul class="faq-content">
+              <li>
+                В отличие от США, это допустимо, но потребуется уплатить штраф.
+                Размер штрафа определяется в зависимости от аукциона и стоимости
+                автомобиля.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="faq-expandable">
+              &nbsp;КАК ПРОИСХОДИТ ДОСТАВКА АВТОМОБИЛЯ ИЗ ЕВРОПЫ?
+            </div>
+            <ul class="faq-content">
+              <li>
+                Автомобили из Европы перевозятся с помощью автовозов. После
+                того, как вы оплатите выигранный лот, ваш менеджер будет
+                информировать вас о стадиях транспортировки и подготавливать
+                соответствующие документы. Мы также можем организовать доставку
+                автомобиля в любую точку мира. Все автомобили фотографируются на
+                каждом этапе перевозки.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="faq-expandable">
+              &nbsp;Сколько стоит доставка автомобиля из Европы в Минск?
+            </div>
+            <ul class="faq-content">
+              <li>
+                Доставка в Минск состоит из двух этапов. На первом этапе из
+                любой европейской страны автомобиль доставляется в Клайпеду.
+                Цена доставки изменяется в зависимости от страны отправления, и
+                обычно составлет около 650 евро. На втором этапе, автомобиль
+                автовозом доставляется в Минск. Цена доставки в Минск составляет
+                около 500 евро.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button
+          class="question__link_button"
+          onclick="window.open('https://www.car-sale.by/cars-from-USA.html', '_self')"
+        >
+          Автомобили из Америки
+        </button>
+      </section>
     </main>
     <footer>
-      <div id="application" class="сontactInformation">
+      <div id="application" class="сontactInformationfooter">
         <div class="сontactInformation-phoneNumbers сontactInformationCard">
           <div class="сontactInformation_img">
             <img src="icons/phone.webp" alt="telephone" />
@@ -796,10 +1170,11 @@
         <div class="сontactInformation-telegramLink сontactInformationCard">
           <div class="сontactInformation_img">
             <a
-              href="https://t.me/CarSalesby"
-              title="Открыть в Telegram"
+              href="https://wa.me/375296886362"
+              title="Открыть в Watsapp"
               target="_blank"
-              ><img src="icons/telegram.png" alt="telegram"
+              rel="noopener noreferrer"
+              ><img src="icons/whatsapp.png" loading="lazy" alt="whatsapp"
             /></a>
           </div>
         </div>
@@ -809,29 +1184,40 @@
               href="viber://chat?number=%2B375296886362"
               title="Открыть в Viber"
               target="_blank"
-              ><img src="icons/viber.png" alt="viber"
+              ><img src="icons/viber.png" loading="lazy" alt="viber"
             /></a>
           </div>
         </div>
         <div class="сontactInformation-telegramLink сontactInformationCard">
           <div class="сontactInformation_img">
             <a
-              href="https://wa.me/375296886362"
-              title="Открыть в Watsapp"
+              href="https://t.me/CarSalesby"
+              title="Открыть в Telegram"
               target="_blank"
-              ><img src="icons/whatsapp.png" alt="whatsapp"
+              rel="noopener noreferrer"
+              ><img src="icons/telegram.png" alt="telegram"
             /></a>
           </div>
         </div>
       </div>
-
       <div class="developmentAndSupport">
         Услуги по приобретению и доставке авто из Европы. Цены в иностранной
         валюте приведены справочно. Не является публичной офертой
         <br />
-        Разработка и поддержка:
+        Разработка, поддержка и продвижение:
         <a href="https://t.me/MurzichStar">MurzichStar</a>
       </div>
     </footer>
+    <!-- Cookie Consent and Privacy Policy Banner -->
+    <div id="consent-banner">
+      <p>
+        Мы используем куки для улучшения вашего опыта на нашем сайте. Нажимая
+        "Принять", вы соглашаетесь на использование всех куки и принимаете нашу
+        политику конфиденциальности.
+      </p>
+      <button onclick="acceptCookiesAndPrivacyPolicy()">Принять</button>
+    </div>
+    <!-- Cookie finished -->
+    <script defer src="js/script.js"></script>
   </body>
 </html>

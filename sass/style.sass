@@ -56,12 +56,12 @@ html
         padding-top: 0.6rem
         align-self: center
     &-email
-        @include respond(phone)
+        @include respond(tab-land)
             display: none
 .сontactInformationCard
     min-width: 22rem
-    @include respond(phone)
-        min-width: 15rem
+    @include respond(tab-land)
+        min-width: 10rem
 
 .navigationMenu
     @include respond(phone)
@@ -70,14 +70,91 @@ html
     ul
         list-style-type: none
         text-align: center
-        padding-top: 2rem
+        padding-top: 1.5rem
         margin-bottom: 0rem
         li
             display: inline-block
             @include font6
             margin-right: 5rem
             color: white
-            margin-bottom: 2rem
+            margin-bottom: 1.5rem
+            transition: 1s all
+            a:hover
+                text-color: inherit
+    &__element
+        list-style: none
+        text-align: center
+    @include respond(tab-land)
+        left: 1rem
+        top: 21rem
+
+    &__element
+        display: inline-block
+        &:link, &:visited
+            color: #369D7E
+            text-decoration: none
+            text-transform: uppercase
+            letter-spacing: .2rem
+            font-weight: 300
+            transition: 1s all
+            display: inline-block
+        &:hover
+            color: inherit
+            transform: rotate(5deg) scale(1.2)
+            color: #369D7E
+
+.burger
+    width: 30px
+    height: 3px
+    background-color: $buttonColor
+    margin: 6px 0
+    transition: 0.4s
+
+.container
+    cursor: pointer
+    display: none
+    position: fixed
+    top: 11rem
+    right: 5rem
+    z-index: 1
+    transition: top 1s ease
+    // @include respond(phone)
+    //     display: inline-block
+
+.change .bar1
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+    transform: rotate(-45deg) translate(-9px, 6px)
+
+.change .bar2
+    opacity: 0
+
+.change .bar3
+    -webkit-transform: rotate(45deg) translate(-8px, -8px)
+    transform: rotate(45deg) translate(-8px, -8px)
+
+.dropdown-content
+    display: none
+    position: fixed
+    background-color: rgba(57, 146, 151, 0.9)
+    border-radius: 3rem
+    min-width: 160px
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+    z-index: 1
+    right: 0
+    transform-origin: top right
+    text-align: center
+
+    & a
+        color: black
+        padding: 12px 16px
+        text-decoration: none
+        display: block
+        font-size: 17px
+        font-weight: 600
+
+.show
+    display: block
+
 .carsFromEurope
     background-image: url('../img/peugeot-BGsmall.webp')
     background-position: center center
@@ -86,19 +163,19 @@ html
     text-align: center
     vertical-align: middle
     position: relative
-    height: 75vh
+    min-height: 75vh
     width: 100%
     &__services
         @include font3
         color: white
+        padding-top: 1rem
         @include respond(phone)
-            font-size: 85%
+            font-size: 140%
             line-height: 4rem
         &_hr
             border: none
-            border-top: 0.3rem solid #2B587A
-            width: auto
-            margin-bottom: 1rem
+            border-top: 0.5rem solid $buttonColor
+            margin: 1rem 1rem
 
     &__carsFromEurope
         @include font4
@@ -107,10 +184,80 @@ html
         @include respond(tab-port)
             margin-bottom: 15rem
     &__сonditions
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
         @include font5
         color: white
         @include respond(phone)
-            font-size: 100%
+            font-size: 170%
+
+        img
+            width: 4.5rem
+            height: auto
+            margin: 1rem 0rem
+
+    &__button
+        display: none
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin-right: 2rem
+
+.carsFromUSA
+    background-image: url('../img/AmericaLogo.webp')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    text-align: left
+    vertical-align: middle
+    position: relative
+    height: 75vh
+    width: 100%
+    &__services
+        position: relative
+        margin-top: 18rem
+        @include font6
+        color: white
+        @include respond(tab-port)
+            font-size: 130%
+            line-height: 4rem
+            margin-top: 8rem
+
+    &__carsFromEurope
+        position: relative
+        text-align: center
+        @include font4
+        color: white
+        @include respond(tab-port)
+            font-size: 200%
+
+    &__button
+        display: none
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin-right: 2rem
+
+.animatedButton
+    z-index: 1
+    display: none
+    @include respond(phone)
+        display: block
+    border-radius: 50px
+    padding: 1rem 2rem
+    font-size: 2.2rem
+    text-align: center
+    transition: background-color 0.5s, color 0.5s
+    cursor: pointer
+    text-decoration: none
+    color: white
+    background-color: $buttonColor
+    opacity: 0.9
+    &:hover
+        background-color: #2980b9
+
 .turnkeyDelivery
     height: auto
     width: 100%
@@ -119,11 +266,13 @@ html
     padding: 3rem 0 3rem 0
     background-color: #F9FEFF
     padding-bottom: 5rem
-
+    display: flex
+    align-items: center
     &-imgBlock
         width: 40%
         text-align: right
         padding-top: 8rem
+        margin: 0 3rem 0 3rem
         @include respond(phone)
             display: none
         &_img
@@ -136,7 +285,6 @@ html
         @include respond(phone)
             width: 30rem
     &-description
-        max-width: 63rem
         @include respond(phone)
             max-width: 150rem
         text-align: left
@@ -181,6 +329,10 @@ html
                     @include respond(phone)
                         font-size: 250%
                         margin-bottom: 2rem
+.question__link_button
+    margin: 0 auto
+    display: block
+
 .catalogOfPopularCarsFromEurope
     text-align: center
     padding: 0rem 1rem 5rem 1rem
@@ -205,25 +357,25 @@ html
             grid-template-columns: repeat(auto-fit, 320px)
             grid-template-rows: repeat(18, 280px)
         .card-1
-            background-image: url('../img/FordFiesta.webp')
+            background-image: url('../img/PEUGEOT 308 - 9700.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
             -o-object-fit: cover
             object-fit: cover
         .card-2
-            background-image: url('../img/RenaultClio.webp')
+            background-image: url('../img/VW Golf - 12700.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-3
-            background-image: url('../img/RenaultMegane.webp')
+            background-image: url('../img/VW Tiguan - 17400.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-4
-            background-image: url('../img/BMW2-SERIESACTIVETOURER.webp')
+            background-image: url('../img/BMW X5.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-5
-            background-image: url('../img/OpelZafira.webp')
+            background-image: url('../img/BMW Baureihe 3 Touring 320 d.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-6
@@ -247,7 +399,7 @@ html
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-11
-            background-image: url('../img/fordKuga.webp')
+            background-image: url('../img/BMW X3.webp')
             background-size: 100% 100%
             background-repeat: no-repeat
         .card-12
@@ -280,7 +432,155 @@ html
             background-repeat: no-repeat
 
         .cards
-            margin: 0 1rem 0 1rem
+            padding: 1rem 1rem 0.5rem 1rem
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            &__price
+                width: auto
+                height: 25px
+                background-color: black
+                opacity: 0.7
+                display: flex
+                justify-content: center
+                align-items: center
+                &_text
+                    @include font2
+                    color: white
+                    margin-right: 1rem
+                    @include respond(phone)
+                        font-size: 200%
+                &_euro
+                    @include font2
+                    color: #399297
+                    @include respond(phone)
+                        font-size: 200%
+            &__carParameters
+                padding: 1rem
+                width: auto
+                background-color: black
+                opacity: 0.5
+
+            &__yearCar
+                @include font2
+                color: white
+                text-align: left
+                @include respond(phone)
+                    font-size: 200%
+            &__modelCar
+                text-align: left
+                text-transform: uppercase
+                @include font3
+                color: white
+                @include respond(phone)
+                    font-size: 200%
+            &__deliveryTerms
+                text-align: left
+                @include font1
+                color: white
+                @include respond(phone)
+                    font-size: 200%
+
+.catalogOfPopularCarsFromUSA
+    text-align: center
+    padding: 0rem 1rem 5rem 1rem
+    h3
+        @include font7
+        margin-bottom: 2rem
+    h4
+        @include font5
+        margin-bottom: 2rem
+        @include respond(phone)
+            font-size: 250%
+    &-Conteiner
+        max-width: 120rem
+        height: auto
+        margin: 0 auto
+        display: grid
+        justify-content: center
+        grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr))
+        grid-auto-rows: minmax(32rem, auto)
+        grid-gap: 2rem 2rem
+        @include respond(phone)
+            grid-template-columns: repeat(auto-fit, 320px)
+            grid-template-rows: repeat(18, 280px)
+        .card-1
+            background-image: url('../img/Chevrolet-Equinox-5800.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+            -o-object-fit: cover
+            object-fit: cover
+        .card-2
+            background-image: url('../img/Chevrolet-Malibu-5800.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-3
+            background-image: url('../img/Ford-Escape-sel-2021-7500.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-4
+            background-image: url('../img/Honda-Accord-touring-2021-5800.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-5
+            background-image: url('../img/Volkswagen-Tiguan-7225.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-6
+            background-image: url('../img/GMC-TERRAIN-SLT-2021-8900.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-7
+            background-image: url('../img/MAZDA-CX-5-GRAND-TOURING-2021-12300.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-8
+            background-image: url('../img/AUDI-Q5-PREMIUM-PLUS-2021-19800_1.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-9
+            background-image: url('../img/VOLVO-XC90-T6-INSCRIPTION-2021.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-10
+            background-image: url('../img/FORD-MUSTANG-2021-12000.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-11
+            background-image: url('../img/MERCEDES-BENZ-GLE-350-4MATIC-24300.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-12
+            background-image: url('../img/HONDA-CR-V-EXL 14000.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-13
+            background-image: url('../img/BMW-X1-XDRIVE28I-14000.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-14
+            background-image: url('../img/FORD EXPLORER XLT.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-15
+            background-image: url('../img/BMW X3 XDRIVEM40I 23 500.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-16
+            background-image: url('../img/LAND ROVER RANGE ROVER VELAR S.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-17
+            background-image: url('../img/TOYOTA VENZA LE.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+        .card-18
+            background-image: url('../img/TESLA MODEL Y.webp')
+            background-size: 100% 100%
+            background-repeat: no-repeat
+
+        .cards
+            // margin: 0 1rem 0 1rem
             padding: 1rem 1rem 0.5rem 1rem
             @include respond(phone)
                 margin: 0
@@ -322,6 +622,7 @@ html
                     // margin-bottom: 0.5rem
             &__modelCar
                 text-align: left
+                text-transform: uppercase
                 @include font3
                 color: white
                 @include respond(phone)
@@ -333,6 +634,7 @@ html
                 color: white
                 @include respond(phone)
                     font-size: 200%
+
 .question
     margin: 0 auto
     text-align: center
@@ -360,6 +662,7 @@ html
     &__link
         &_button
             background-color: #399297
+            border-radius: 10rem
             color: white
             height: 6rem
             width: 23rem
@@ -411,8 +714,7 @@ html
             display: flex
             flex-flow: row wrap
             align-items: center
-            @include respond(phone)
-                justify-content: center
+            justify-content: center
             &_img
                 padding: 2rem 0rem
                 img
@@ -423,6 +725,7 @@ html
                     align-items: center
             &_text
                 max-width: 70rem
+                margin-left: 3rem
                 span
                     padding-right: 17rem
                     @include font3
@@ -435,7 +738,7 @@ html
                     @include respond(phone)
                         font-size: 250%
                     li
-                        padding-top: 1rem
+                        padding: 1rem 0rem
 .advantage
     padding: 5rem 2rem 5rem 2rem
     background-color: #F8F8F8
@@ -509,7 +812,7 @@ html
     &__box
         padding: 1rem
         min-width: 310px
-        max-width: 55rem
+        width: 55rem
         display: flex
         justify-content: center
         margin-bottom: 2rem
@@ -517,7 +820,11 @@ html
         border: 0.1rem solid #399297
         box-shadow: 0 0 10px rgb(57, 146, 151, 0.5)
         &_text
+            height: 75rem
             align-self: center
+            display: flex
+            flex-direction: column
+            justify-content: space-between
             span
                 @include font3
                 @include respond(phone)
@@ -537,6 +844,88 @@ html
                     font-size: 50%
 .developmentAndSupport
     text-align: center
+    margin-bottom: 1rem
     @include font1
     a
         color: blue
+
+.faq
+    margin: 0 auto
+    max-width: 120rem
+    padding: 0 1rem 0 2rem
+
+    ul
+        list-style-type: none
+        li
+            margin-bottom: 1rem
+
+    &-mainText
+        text-align: center
+        @include font6
+        align-self: center
+        margin-bottom: 1rem
+        @include respond(phone)
+            font-size: 250%
+
+    &-content
+        @include font5
+        display: none
+        list-style-type: none
+        padding-left: 2rem
+        @include respond(phone)
+            font-size: 250%
+
+    &-expandable
+        @include font3
+        text-transform: uppercase
+        @include respond(phone)
+            font-size: 180%
+
+    &-expandable::before
+        content: " +"
+        font-size: 20px
+        @include respond(phone)
+            font-size: 16px
+
+    &-expandable.active::before
+        content: " -"
+        @include respond(phone)
+            font-size: 16px
+
+.сontactInformationfooter
+    padding-left: 1rem
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-evenly
+    text-align: center
+    @include respond(phone)
+        margin-right: 10rem
+#consent-banner
+    display: none
+    position: fixed
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    background-color: #ffffff
+    padding: 20px
+    width: 80%
+    max-width: 300px
+    font-size: 12px
+    border-radius: 50px
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+    text-align: center
+    p
+        margin: 0
+        padding: 0 10px
+    button
+        background-color: #399297
+        border: none
+        color: white
+        padding: 10px 20px
+        text-align: center
+        text-decoration: none
+        display: inline-block
+        font-size: 16px
+        margin: 10px 2px
+        cursor: pointer
+        border-radius: 20px

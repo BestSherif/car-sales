@@ -1,3 +1,23 @@
+@font-face
+    font-family: 'Montserrat'
+    src: url('../fonts/Montserrat-ExtraBold.eot')
+    src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+    src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype')
+    font-weight: 700
+    font-style: normal
+    line-height: 2rem
+
+@font-face
+    font-family: 'Montserrat'
+    src: url('../fonts/Montserrat-Regular.eot')
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/Montserrat-Regular.woff') format('woff'),
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype')
+    font-weight: 400
+    font-style: normal
+    line-height: 2rem
+
 @mixin font1
     font-family: 'Montserrat', sans-serif
     font-weight: 400
@@ -14,6 +34,8 @@
     font-family: 'Montserrat', sans-serif
     font-size: 1.4rem
     font-weight: 700
+    @include respond(phone)
+        font-size: 180%
 // обычный текст +250
 @mixin font5
     font-family: 'Montserrat', sans-serif
@@ -22,8 +44,9 @@
 // Жирный обычный текст
 @mixin font6
     font-family: 'Montserrat', sans-serif
-    font-size: 1.8rem
+    font-size: 1.9rem
     font-weight: 700
+    line-height: 2.7rem
 
 //Крупные заглавья
 @mixin font7
